@@ -1,7 +1,7 @@
 isi info:
-1. photo
-2. name
-3. date of birth
+1. photo -
+2. name -
+3. date of birth - 
 4. place of birth
 5. hair
 6. eyes

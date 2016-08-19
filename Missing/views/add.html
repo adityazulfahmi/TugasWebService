@@ -55,52 +55,74 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="exampleInputFile">Photo</label>
-                        <input type="file" id="exampleInputFile">
+                        <label class="control-label" for="inputPhoto">Photo</label>
+                        <input type="file" id="inputPhoto">
                         <p class="help-block">Example block-level help text here.</p>
                     </div>
 
                     <div class="form-group">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Active
-                            </label>
-                        </div>
-                        <p class="help-block">Lorem ipsum dolor sit amet</p>
+                        <label class="control-label" for="inputHair">Hair : </label>
+                        <input type="text" class="form-control" id="inputHair" placeholder="Enter hair characteristics">
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label">Choices</label>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" name="optionsRadios" id="optionsCheckbox1" value="option1"
-                                       checked="">
-                                Option one is this and that—be sure to include why it's great
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" name="optionsRadios" id="optionsCheckbox2" value="option2">
-                                Option two can be something else and selecting it will deselect option one
-                            </label>
-                        </div>
+                        <label class="control-label" for="inputHeight">Height : </label>
+                        <input type="number" class="form-control" id="inputHeight" placeholder="Enter height in cm">
+                        <p class="help-block">Please input in cm.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputWeight">Weight : </label>
+                        <input type="number" class="form-control" id="inputWeight" placeholder="Enter weight in Kg">
+                        <p class="help-block">Please input in Kg.</p>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label">Sex</label>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                <input type="radio" name="optionsRadios" id="male" value="male" checked="">
                                 Male
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                <input type="radio" name="optionsRadios" id="female" value="female">
                                 Female
                             </label>
                         </div>
                         <p class="help-block">Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputRace">Race : </label>
+                        <input type="text" class="form-control" id="inputRace" placeholder="Enter race">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputSAM">Scars and Marks: </label>
+                        <input type="text" class="form-control" id="inputSAM" placeholder="Enter scars and marks">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputReward">Reward : </label>
+                        <input type="number" class="form-control" id="inputReward" placeholder="Enter reward in USD">
+                        <p class="help-block">Please input in USD.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputRemarks">Remarks : </label>
+                        <input type="text" class="form-control" id="inputRemarks" placeholder="Enter remarks">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputDetails">Details : </label>
+                        <input type="text" class="form-control" id="inputDetails" placeholder="Enter details here">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputContact">Contacts : </label>
+                        <input type="text" class="form-control" id="inputContact" placeholder="Enter phone number or email here">
                     </div>
 
                     <button type="submit" class="btn btn-default">Create User</button>
