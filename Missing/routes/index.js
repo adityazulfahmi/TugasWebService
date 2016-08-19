@@ -18,7 +18,8 @@ var Scheme = mongoose.Schema({
   remarks:String,
   details:String,
   contact:String,
-  year  : Number
+  year  : Number,
+  comments :[String]
 
 });
 var Missing = mongoose.model('MissingTable', Scheme);
@@ -47,6 +48,7 @@ router.post('/add', function(req, res, next) {
   var details = req.body.details;
   var contact = req.body.contact;
   var year = req.body.year;
+
   var person = new Missing({
     photo : fs.readFileSync(photo),
     name  : name,
