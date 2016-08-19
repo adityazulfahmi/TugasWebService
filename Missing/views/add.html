@@ -40,40 +40,39 @@
                 <form role="form">
                     <div class="form-group">
                         <label class="control-label" for="inputName">Name : </label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Enter name">
-                        <p class="help-block">Lorem ipsum dolor sit amet</p>
+                        <input type="text" class="form-control" id="inputName" placeholder="Enter name" ng-model="name">
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputDOB">Date of Birth : </label>
-                        <input type="text" class="form-control" id="inputDOB" placeholder="Enter DOB">
+                        <input type="text" class="form-control" id="inputDOB" placeholder="Enter DOB" ng-model="dob">
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputPOB">Place of Birth : </label>
-                        <input type="text" class="form-control" id="inputPOB" placeholder="Enter POB">
+                        <input type="text" class="form-control" id="inputPOB" placeholder="Enter POB" ng-model="pob">
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputPhoto">Photo</label>
-                        <input type="file" id="inputPhoto">
-                        <p class="help-block">Example block-level help text here.</p>
+                        <input type="file" id="inputPhoto" ng-model="photo">
+                        <p class="help-block">Choose photo file.</p>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputHair">Hair : </label>
-                        <input type="text" class="form-control" id="inputHair" placeholder="Enter hair characteristics">
+                        <input type="text" class="form-control" id="inputHair" placeholder="Enter hair characteristics" ng-model="hair">
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputHeight">Height : </label>
-                        <input type="number" class="form-control" id="inputHeight" placeholder="Enter height in cm">
+                        <input type="number" class="form-control" id="inputHeight" placeholder="Enter height in cm" ng-model="height">
                         <p class="help-block">Please input in cm.</p>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputWeight">Weight : </label>
-                        <input type="number" class="form-control" id="inputWeight" placeholder="Enter weight in Kg">
+                        <input type="number" class="form-control" id="inputWeight" placeholder="Enter weight in Kg"  ng-model="weight">
                         <p class="help-block">Please input in Kg.</p>
                     </div>
 
@@ -81,48 +80,47 @@
                         <label class="control-label">Sex</label>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="optionsRadios" id="male" value="male" checked="">
+                                <input type="radio" name="optionsRadios" id="male"  ng-model="sex" value="male" ng-value="male" checked="">
                                 Male
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="optionsRadios" id="female" value="female">
+                                <input type="radio" name="optionsRadios" id="female"  ng-model="sex" value="female" ng-value="female">
                                 Female
                             </label>
                         </div>
-                        <p class="help-block">Lorem ipsum dolor sit amet</p>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputRace">Race : </label>
-                        <input type="text" class="form-control" id="inputRace" placeholder="Enter race">
+                        <input type="text" class="form-control" id="inputRace" placeholder="Enter race" ng-model="race">
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputSAM">Scars and Marks: </label>
-                        <input type="text" class="form-control" id="inputSAM" placeholder="Enter scars and marks">
+                        <input type="text" class="form-control" id="inputSAM" placeholder="Enter scars and marks" ng-model="sam">
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputReward">Reward : </label>
-                        <input type="number" class="form-control" id="inputReward" placeholder="Enter reward in USD">
+                        <input type="number" class="form-control" id="inputReward" placeholder="Enter reward in USD" ng-model="reward">
                         <p class="help-block">Please input in USD.</p>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputRemarks">Remarks : </label>
-                        <input type="text" class="form-control" id="inputRemarks" placeholder="Enter remarks">
+                        <input type="text" class="form-control" id="inputRemarks" placeholder="Enter remarks" ng-model="remarks">
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputDetails">Details : </label>
-                        <input type="text" class="form-control" id="inputDetails" placeholder="Enter details here">
+                        <input type="text" class="form-control" id="inputDetails" placeholder="Enter details here" ng-model="details">
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputContact">Contacts : </label>
-                        <input type="text" class="form-control" id="inputContact" placeholder="Enter phone number or email here">
+                        <input type="text" class="form-control" id="inputContact" placeholder="Enter phone number or email here" ng-model="contact">
                     </div>
 
                     <button type="submit" class="btn btn-default">Create User</button>
