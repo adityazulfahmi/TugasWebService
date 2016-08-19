@@ -1,0 +1,30 @@
+isi info:
+1. photo
+2. name
+3. date of birth
+4. place of birth
+5. hair
+6. eyes
+7. height
+8. weight
+9. sex
+10. race
+11. scars and marks
+12. reward
+13. remarks
+14. details
+15. contact
+16. timestamp
+
+Filter:
+1. year
+2. sex
+3. name
+4. reward
+
+Use case:
+1. search
+2. lihat daftar orang hilang
+3. lihat profil
+4. post data baru
+5. post comment
