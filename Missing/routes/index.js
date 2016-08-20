@@ -88,7 +88,6 @@ router.post('/add', function(req, res, next) {
     year  :year
   });
 
-  //alert("lalalal"+JSON.parse(person));
   person.save(function (err, silence) {
     if(err){
       console.log(err);
@@ -111,79 +110,79 @@ router.get('/people', function(req, res, err) {
   })
 });
 
-// router.get('/people/:id', function(req, res, err) {
-//
-//   var person = new Missing();
-//
-//   Missing.findOne({_id: req.params.id},function (err, person) {
-//     if(err) {
-//       console.err(err);
-//       throw err;
-//     }
-//     console.log(person);
-//     res.json(person);
-//   })
-// });
-//
-// //year
-// router.get('/people/:year', function(req, res, err) {
-//
-//   var people = new Missing();
-//
-//   Missing.findOne({year: req.params.year},function (err, people) {
-//     if(err) {
-//       console.err(err);
-//       throw err;
-//     }
-//     console.log(people);
-//     res.json(people);
-//   })
-// });
-//
+router.get('/people/:id', function(req, res, err) {
+
+  var person = new Missing();
+
+  Missing.findOne({_id: req.params.id},function (err, person) {
+    if(err) {
+      console.err(err);
+      throw err;
+    }
+    console.log(person);
+    res.json(person);
+  })
+});
+
+//year
+//db.mycol.find({"by":"tutorials point"}).pretty()
+router.get('/people/year/:year', function(req, res, err) {
+
+  var people = new Missing();
+
+  Missing.find({year: req.params.year},function (err, people) {
+    if(err) {
+      console.err(err);
+      throw err;
+    }
+    console.log(people);
+    res.json(people);
+  }).sort( { name: 1 } )
+});
+
 // //sex
-// router.get('/people/:sex', function(req, res, err) {
-//
-//   var people = new Missing();
-//
-//   Missing.findOne({sex: req.params.sex},function (err, people) {
-//     if(err) {
-//       console.err(err);
-//       throw err;
-//     }
-//     console.log(people);
-//     res.json(people);
-//   })
-// });
-//
+router.get('/people/sex/:sex', function(req, res, err) {
+
+  var people = new Missing();
+
+  Missing.find({sex: req.params.sex},function (err, people) {
+    if(err) {
+      console.err(err);
+      throw err;
+    }
+    console.log(people);
+    res.json(people);
+  }).sort( { name: 1 } )
+});
+
 // //name
-// router.get('/people/:name', function(req, res, err) {
-//
-//   var people = new Missing();
-//
-//   Missing.findOne({name: req.params.name},function (err, people) {
-//     if(err) {
-//       console.err(err);
-//       throw err;
-//     }
-//     console.log(people);
-//     res.json(people);
-//   })
-// });
-//
+router.get('/people/name/:name', function(req, res, err) {
+
+  var people = new Missing();
+
+  Missing.find({name: {'$regex':req.params.name}},function (err, people) {
+    if(err) {
+      console.err(err);
+      throw err;
+    }
+    console.log(people);
+    res.json(people);
+  })
+});
+
 // //reward
-// router.get('/people/reward', function(req, res, err) {
-//
-//   var people = new Missing();
-//
-//   Missing.findOne({_id: req.params.year},function (err, people) {
-//     if(err) {
-//       console.err(err);
-//       throw err;
-//     }
-//     console.log(people);
-//     res.json(people);
-//   })
-// });
+router.get('/reward', function(req, res, err) {
+  var people = new Missing();
+
+  Missing.find(function (err, people) {
+    if(err) {
+      console.err(err);
+      throw err;
+    }
+    console.log(people);
+    res.json(people);
+  }).sort( { reward: -1 } )
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
