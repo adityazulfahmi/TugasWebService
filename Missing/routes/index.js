@@ -1,9 +1,16 @@
 var express = require('express');
 var router = express.Router();
-var fs  = require('fs');
+// var fs = require('fs');
+
+var multiPart = require('connect-multiparty');
+var multiPartMiddleware = multiPart();
+var path = require('path');
+var fs = require ('fs-extra');
+router.use(multiPartMiddleware);
 var mongoose = require ('mongoose');
+
 var Scheme = mongoose.Schema({
-  photo : Buffer,
+  photo : String,
   name  : String,
   dob   : Date,
   pob   : String,
@@ -19,9 +26,12 @@ var Scheme = mongoose.Schema({
   details:String,
   contact:String,
   year  : Number,
-  comments :[String]
-
+  comments :[{
+    email: String,
+    comment: String
+  }]
 });
+
 var Missing = mongoose.model('MissingTable', Scheme);
 mongoose.connect('mongodb://localhost/missingdb', function (err) {
   if (err){
@@ -31,9 +41,10 @@ mongoose.connect('mongodb://localhost/missingdb', function (err) {
   console.log('mongoose connection success');
 })
 
-router.post('/add', function(req, res, next) {
+router.post('/add', multiPartMiddleware, function(req, res, next) {
   console.log("woy");
-  var photo   = req.body.photo;
+  var photo   = req.files.photo;
+  console.log("user is submitting "+ photo);
   var name    = req.body.name;
   var dob     = req.body.dob;
   var pob     = req.body.pob;
@@ -49,6 +60,16 @@ router.post('/add', function(req, res, next) {
   var details = req.body.details;
   var contact = req.body.contact;
   var year = req.body.year;
+
+  //upload photo
+  var uploadDate = new Date().toDateString();
+  var tempPath = photo.path;
+  console.log("temp Path: "+tempPath);
+  var targetPath = path.join(__dirname, "../public/image/" +uploadDate +" "+ photo.name);
+  // contact.log("targetPath"+ targetPath);
+  console.log("user is submitting "+ photo);
+  var imageUpload = targetPath;
+
 
   console.log(
       "photo :"+photo+"\n"+
@@ -70,7 +91,7 @@ router.post('/add', function(req, res, next) {
   );
 
   var person = new Missing({
-    //photo : fs.readFileSync(photo),
+    photo : imageUpload,
     name  : name,
     dob   : dob,
     pob   : pob,
@@ -87,6 +108,17 @@ router.post('/add', function(req, res, next) {
     contact:contact,
     year  :year
   });
+  console.log("sampai?");
+
+  fs.rename(tempPath, targetPath, function (err) {
+    if(err){
+      console.log(err)
+    } else {
+      console.log("photo moved");
+      console.log(targetPath);
+    }
+  })
+  console.log("sampai ga?");
 
   person.save(function (err, silence) {
     if(err){
@@ -96,6 +128,61 @@ router.post('/add', function(req, res, next) {
     console.log('success');
     res.send('success');
   });
+});
+
+
+router.post('/addComment', function(req, res, next) {
+ // console.log("woy");
+  var id    = req.body.id;
+  var iemail = req.body.email;
+  var icomment   = req.body.comment;
+  var ObjectId = require('mongodb').ObjectID;
+  var o_id = new ObjectId(id);
+
+
+  console.log(
+      "id :"+id+"\n"+
+      "email :"+iemail+"\n"+
+      "comment  :"+icomment+"\n"+
+      "oid  :"+o_id+"\n"
+  );
+
+  //console.log("hoho");
+  Missing.update({_id: o_id},
+      {
+        $push : {
+           comments : {
+              email : iemail,
+              comment : icomment
+           }
+        }
+  }
+  ,function (err, numberAffected, rawResponse) {
+            if(err){
+              console.log(err.message);
+              throw err;
+            }
+          }
+      );
+  //console.log("haha");
+});
+
+router.get('/trypeople', function(req, res, err) {
+
+  var id = "57b7e1c6c38da0a81faa2a7c";
+  var ObjectID = require('mongodb').ObjectID;
+  var o_id = new ObjectID(id);
+
+  var person = new Missing();
+
+  Missing.find({_id: o_id},function (err, person) {
+    if(err) {
+      console.err(err);
+      throw err;
+    }
+    console.log(person);
+    res.json(person);
+  })
 });
 
 router.get('/people', function(req, res, err) {
