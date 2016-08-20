@@ -2,7 +2,7 @@
  * Created by ajou on 8/19/2016.
  */
 var module = angular.module('missingApp', ['ngFileUpload']);
-module.controller('MainCtrl', ['$scope', '$http' ,'Upload', function ($scope, $http,Upload) {
+module.controller('MainCtrl', ['$scope', '$http','$window' ,'Upload', function ($scope, $http,$window, Upload) {
     // $scope.user ={};
     // $scope.user.username ='';
     $scope.user ={};
@@ -44,6 +44,8 @@ module.controller('MainCtrl', ['$scope', '$http' ,'Upload', function ($scope, $h
                 console.log("firing");
 
             }).success(function (data) {
+                alert("Success to add person");
+                $window.location.href = 'index.html';
 
             }).error(function (error) {
                 console.log(error);
