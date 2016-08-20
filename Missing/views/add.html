@@ -11,6 +11,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-resource.js"></script>
     <script src="../public/javascripts/missing.js"></script>
+    <script src="../node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
+    <script src="../node_modules/ng-file-upload/dist/ng-file-upload-all.js"></script>
+    <script src="../node_modules/ng-file-upload/dist/ng-file-upload-shim.js"></script>
 </head>
 
 <header>
@@ -59,7 +62,8 @@
 
                         <div class="form-group">
                             <label class="control-label" for="inputPhoto">Photo</label>
-                            <input type="file" id="inputPhoto" ng-model="photo">
+                            <input type="file" id="inputPhoto" ngf-select ng-model="file" name="file"
+                                   ngf-pattern="'image/*'" ngf-accept="'image/*'">
                             <p class="help-block">Choose photo file.</p>
                         </div>
 
