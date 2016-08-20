@@ -44,3 +44,31 @@ module.controller('MainCtrl', ['$scope', '$http' , function ($scope, $http) {
             });
     };
 }]);
+
+
+module.controller('CommentCtrl', ['$scope', '$http' , function ($scope, $http) {
+    // $scope.user ={};
+    // $scope.user.username ='';
+    $scope.submitComment = function () {
+
+        $http({
+            method : 'POST',
+            url : 'http://localhost:3000/addComment',
+            data : {
+                id   : "57b7e1c6c38da0a81faa2a7c",
+                email     : $scope.email,
+                comment    : $scope.comment
+            }
+        })
+            .success(function(data, status, headers, config) {
+                if( data ) {
+                    alert(data);
+                }
+                else {
+                }
+            })
+            .error(function(data, status, headers, config) {
+                console.log(status);
+            });
+    };
+}]);

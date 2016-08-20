@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Missing Person</title>
+
+    <link href='../public/stylesheets/bootstrap-3.3.7-dist/css/bootstrap.css' rel="stylesheet">
+    <link href='../public/stylesheets/style.css' rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-resource.js"></script>
+    <script src="../public/javascripts/missing.js"></script>
+</head>
+<body ng-app="missingApp" ng-controller="CommentCtrl">
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-info">
+                <div class="panel-heading">Missing Person Form</div>
+                <div class="panel-body">
+                    <form role="form" id="inputForm" >
+
+                        <div class="form-group">
+                            <label class="control-label" for="inputEmail">Email : </label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Enter email"
+                            ng-model="email">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label" for="inputComment">Remarks : </label>
+                            <!--<input type="text" class="form-control" id="inputRemarks" placeholder="Enter remarks"-->
+                            <!--ng-model="remarks">-->
+                            <textarea form="inputForm" class="form-control" id="inputComment" placeholder="Enter comments"
+                                      ng-model="comment"></textarea>
+                        </div>
+
+                        <input type="button" value="Submit" ng-click="submitComment()"class="btn btn-success">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
