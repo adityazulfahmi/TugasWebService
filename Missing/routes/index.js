@@ -1,10 +1,16 @@
 var express = require('express');
 var router = express.Router();
-var fs  = require('fs');
+// var fs = require('fs');
+
+var multiPart = require('connect-multiparty');
+var multiPartMiddleware = multiPart();
+var path = require('path');
+var fs = require ('fs-extra');
+router.use(multiPartMiddleware);
 var mongoose = require ('mongoose');
 
 var Scheme = mongoose.Schema({
-  photo : Buffer,
+  photo : String,
   name  : String,
   dob   : Date,
   pob   : String,
@@ -25,6 +31,7 @@ var Scheme = mongoose.Schema({
     comment: String
   }]
 });
+
 var Missing = mongoose.model('MissingTable', Scheme);
 mongoose.connect('mongodb://localhost/missingdb', function (err) {
   if (err){
@@ -34,9 +41,10 @@ mongoose.connect('mongodb://localhost/missingdb', function (err) {
   console.log('mongoose connection success');
 })
 
-router.post('/add', function(req, res, next) {
-  //console.log("woy");
-  var photo   = req.body.photo;
+router.post('/add', multiPartMiddleware, function(req, res, next) {
+  console.log("woy");
+  var photo   = req.files.photo;
+  console.log("user is submitting "+ photo);
   var name    = req.body.name;
   var dob     = req.body.dob;
   var pob     = req.body.pob;
@@ -52,6 +60,16 @@ router.post('/add', function(req, res, next) {
   var details = req.body.details;
   var contact = req.body.contact;
   var year = req.body.year;
+
+  //upload photo
+  var uploadDate = new Date().toDateString();
+  var tempPath = photo.path;
+  console.log("temp Path: "+tempPath);
+  var targetPath = path.join(__dirname, "../public/image/" +uploadDate +" "+ photo.name);
+  // contact.log("targetPath"+ targetPath);
+  console.log("user is submitting "+ photo);
+  var imageUpload = targetPath;
+
 
   console.log(
       "photo :"+photo+"\n"+
@@ -73,7 +91,7 @@ router.post('/add', function(req, res, next) {
   );
 
   var person = new Missing({
-    //photo : fs.readFileSync(photo),
+    photo : imageUpload,
     name  : name,
     dob   : dob,
     pob   : pob,
@@ -90,6 +108,17 @@ router.post('/add', function(req, res, next) {
     contact:contact,
     year  :year
   });
+  console.log("sampai?");
+
+  fs.rename(tempPath, targetPath, function (err) {
+    if(err){
+      console.log(err)
+    } else {
+      console.log("photo moved");
+      console.log(targetPath);
+    }
+  })
+  console.log("sampai ga?");
 
   person.save(function (err, silence) {
     if(err){
