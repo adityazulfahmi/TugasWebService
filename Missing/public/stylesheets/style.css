@@ -1,7 +1,14 @@
+@font-face {
+  font-family: Questrial;
+  src: url("bootstrap-3.3.7-dist/fonts/Questrial-Regular.otf") format("opentype");
+}
+
 body {
   margin-top: 50px;
+  font-family: Questrial;
 }
 
 a {
   color: #00B7FF;
 }
+

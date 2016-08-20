@@ -22,11 +22,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Missing</a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="/Missing/public/resource/Logo.png" width="150" height="30">
+                </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <form class="navbar-form navbar-right">
-                    <a href="add.html" class="btn btn-success">
+                    <a href="add.html" class="btn btn-primary">
                         <span class="glyphicon glyphicon-plus"></span> Add
                     </a>
                 </form>
@@ -41,36 +43,25 @@
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class=""></li>
         <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <img class="first-slide" src="/Missing/public/resource/Banner%202.jpg" alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Best place to find!</h1>
-                    <p>Million of bounty haunters and truepenny will help you to find someone who very valuable for your family<code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                    <h1>Best place to help!</h1>
+                    <p>You will never know there is someone really waiting for the people that you always meet.</p>
                     <p><a class="btn btn-lg btn-primary" href="add.html" role="button">Sign up today</a></p>
                 </div>
             </div>
         </div>
         <div class="item active">
-            <img class="second-slide" src="https://scontent.xx.fbcdn.net/t31.0-8/12484736_10205281257652700_629336233473493296_o.jpg" alt="Second slide">
+            <img class="second-slide" src="/Missing/public/resource/Banner%201.jpg" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Best place to find!</h1>
                     <p>Million of bounty haunters and truepenny will help you to find someone who very valuable for you.</p>
                     <p><a class="btn btn-lg btn-primary" href="add.html" role="button">Add him/her!</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com/examples/carousel/#" role="button">Browse gallery</a></p>
                 </div>
             </div>
         </div>
@@ -85,5 +76,24 @@
     </a>
 </div><!-- /.carousel -->
 
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-4" >
+            <img class="img-circle" src="https://scontent.xx.fbcdn.net/v/t1.0-9/311740_2329450202882_4583798_n.jpg?oh=8f7200c13e71cb2b3f7b3094e53bfb7e&oe=5840F322" alt="Generic placeholder image" width="140" height="140">
+            <h2>Aditya Zulfahmi</h2>
+            <p>Reward : $30000</p>
+            <p><a class="btn btn-default" href="profile.html/fahmi" role="button">View details »</a></p>
+        </div>
+        <div class="col-lg-4" ng-repeat = "member in members">
+            <img class="img-circle" src="https://scontent.xx.fbcdn.net/v/t1.0-9/311740_2329450202882_4583798_n.jpg?oh=8f7200c13e71cb2b3f7b3094e53bfb7e&oe=5840F322" alt="Generic placeholder image" width="140" height="140">
+            <h2>{{member.name}}</h2>
+            <p>Reward : ${{member.reaward}}</p>
+            <p><a class="btn btn-default" href="profile.html/{{member.name}}" role="button">View details »</a></p>
+        </div>
+
+    </div>
+</div>
 </body>
 </html>

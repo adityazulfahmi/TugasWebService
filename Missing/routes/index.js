@@ -25,9 +25,11 @@ var Scheme = mongoose.Schema({
   remarks:String,
   details:String,
   contact:String,
-  year  : Number
-  // comments :[String]
-
+  year  : Number,
+  comments :[{
+    email: String,
+    comment: String
+  }]
 });
 
 var Missing = mongoose.model('MissingTable', Scheme);
@@ -126,6 +128,61 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
     console.log('success');
     res.send('success');
   });
+});
+
+
+router.post('/addComment', function(req, res, next) {
+ // console.log("woy");
+  var id    = req.body.id;
+  var iemail = req.body.email;
+  var icomment   = req.body.comment;
+  var ObjectId = require('mongodb').ObjectID;
+  var o_id = new ObjectId(id);
+
+
+  console.log(
+      "id :"+id+"\n"+
+      "email :"+iemail+"\n"+
+      "comment  :"+icomment+"\n"+
+      "oid  :"+o_id+"\n"
+  );
+
+  //console.log("hoho");
+  Missing.update({_id: o_id},
+      {
+        $push : {
+           comments : {
+              email : iemail,
+              comment : icomment
+           }
+        }
+  }
+  ,function (err, numberAffected, rawResponse) {
+            if(err){
+              console.log(err.message);
+              throw err;
+            }
+          }
+      );
+  //console.log("haha");
+});
+
+router.get('/trypeople', function(req, res, err) {
+
+  var id = "57b7e1c6c38da0a81faa2a7c";
+  var ObjectID = require('mongodb').ObjectID;
+  var o_id = new ObjectID(id);
+
+  var person = new Missing();
+
+  Missing.find({_id: o_id},function (err, person) {
+    if(err) {
+      console.err(err);
+      throw err;
+    }
+    console.log(person);
+    res.json(person);
+  })
 });
 
 router.get('/people', function(req, res, err) {

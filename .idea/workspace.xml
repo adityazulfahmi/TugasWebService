@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e50e6794-6021-4e14-a5f6-69fee7607863" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/img/tea.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/img/tea.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/FileAPI.flash.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/CORSFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/FileUpload$SizeEntry.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/FileUpload.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/S3Signature.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/img/tea.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/img/tea.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/FileAPI.flash.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/dist/FileAPI.flash.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/FileAPI.flash.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/public/Image/Sat Aug 20 2016 ace.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/public/Image/Sat Aug 20 2016 aceicon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/public/Image/Sat Aug 20 2016 background_draw.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/public/Image/Sat Aug 20 2016 berhasil.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/public/Image/Sat Aug 20 2016 black-background-wallpaper-25.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/public/Image/Sat Aug 20 2016 black_black.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/public/Image/Sat Aug 20 2016 triangle-outline-256.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/node_modules/pend/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/node_modules/pend/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/node_modules/pend/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/node_modules/pend/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/node_modules/pend/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/node_modules/fd-slicer/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/multiparty/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/.eslintignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/lib/parse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/lib/stringify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/test/parse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/test/stringify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/node_modules/qs/test/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/connect-multiparty/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/copy-sync/copy-file-sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/copy-sync/copy-sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/copy-sync/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/copy/copy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/copy/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/copy/ncp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/empty/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/ensure/file.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/ensure/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/ensure/link.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/ensure/symlink-paths.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/ensure/symlink-type.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/ensure/symlink.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/json/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/json/jsonfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/json/output-json-sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/json/output-json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/mkdirs/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/mkdirs/mkdirs-sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/mkdirs/mkdirs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/mkdirs/win32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/move/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/output/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/remove/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/util/assign.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/util/utimes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/lib/walk/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/.bin/rimraf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/.bin/rimraf.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/graceful-fs/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/graceful-fs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/graceful-fs/fs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/graceful-fs/graceful-fs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/graceful-fs/legacy-streams.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/graceful-fs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/graceful-fs/polyfills.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/jsonfile/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/jsonfile/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/jsonfile/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/jsonfile/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/jsonfile/appveyor.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/jsonfile/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/jsonfile/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/klaw/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/klaw/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/klaw/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/klaw/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/klaw/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/klaw/src/assign.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/klaw/src/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/path-is-absolute/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/path-is-absolute/license" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/path-is-absolute/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/path-is-absolute/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/bin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/changelog.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/glob.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/fs.realpath/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/fs.realpath/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/fs.realpath/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/fs.realpath/old.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/fs.realpath/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/inflight/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/inflight/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/inflight/inflight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/inflight/node_modules/wrappy/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/inflight/node_modules/wrappy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/inflight/node_modules/wrappy/wrappy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/inflight/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/minimatch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/README.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/example/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/test/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/once/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/once/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/once/node_modules/wrappy/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/once/node_modules/wrappy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/once/node_modules/wrappy/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/once/node_modules/wrappy/wrappy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/once/once.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/once/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/node_modules/rimraf/rimraf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs-extra/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/fs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/artifacts/ng_file_upload_demo_server_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/artifacts/ng_file_upload_demo_server_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/codeStyleSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/libraries/Maven__com_google_appengine_appengine_api_1_0_sdk_1_9_18.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/libraries/Maven__com_google_appengine_appengine_endpoints_1_9_18.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/C#/UploadController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/C#/UploadHandler.ashx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/C#/UploadHandler.ashx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/java/com/df/angularfileupload/CORSFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/java/com/df/angularfileupload/FileUpload.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/java/com/df/angularfileupload/S3Signature.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/resources/META-INF/jdoconfig.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/resources/META-INF/persistence.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/WEB-INF/appengine-web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/WEB-INF/logging.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/crossdomain.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/donate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/FileAPI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/FileAPI.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/ng-file-upload-all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/ng-file-upload-all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/ng-file-upload-shim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/ng-file-upload-shim.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/ng-file-upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/ng-file-upload.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/ng-img-crop.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/ng-img-crop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/src/main/webapp/js/upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/maven-archiver/pom.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/appengine-web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/META-INF/jdoconfig.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/META-INF/persistence.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/logging.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/crossdomain.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/donate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/FileAPI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/FileAPI.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-shim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-shim.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/ng-img-crop.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/ng-img-crop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/target/ng-file-upload-demo-server-0.0.1/js/upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/dist/FileAPI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/dist/FileAPI.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/dist/ng-file-upload-all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/dist/ng-file-upload-all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/dist/ng-file-upload-shim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/dist/ng-file-upload-shim.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/dist/ng-file-upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/dist/ng-file-upload.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/nuget/Package.nuspec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/nuget/build.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/nuget/nuget.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/release.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/FileAPI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/data-url.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/drop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/exif.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/resize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/shim-elem.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/shim-filereader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/shim-upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/src/validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/test/.bowerrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/test/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/test/spec/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/process/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/process/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/process/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/process/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/process/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/process/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/.zuul.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/support/isBuffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/support/isBufferBrowser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/test/browser/inspect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/test/browser/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/test/node/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/test/node/format.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/test/node/inspect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/test/node/log.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/test/node/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/node_modules/util/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/node_modules/path/path.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/public/stylesheets/bootstrap-3.3.7-dist/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Missing/public/stylesheets/carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sh.exe.stackdump" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/TugasWebService.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Missing/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Missing/public/stylesheets/bootstrap.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/Missing/node_modules/ng-file-upload/demo/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Missing/public/javascripts/missing.js" afterPath="$PROJECT_DIR$/Missing/public/javascripts/missing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Missing/routes/index.js" afterPath="$PROJECT_DIR$/Missing/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Missing/views/add.html" afterPath="$PROJECT_DIR$/Missing/views/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Missing/views/index.html" afterPath="$PROJECT_DIR$/Missing/views/index.html" />
+    </list>
+    <ignored path="TugasWebService.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TugasWebService" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Missing/public/stylesheets/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Missing/views/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Missing/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6075">
+              <caret line="269" column="21" selection-start-line="269" selection-start-column="21" selection-end-line="269" selection-end-column="21" />
+              <folding>
+                <marker date="1471692782947" expanded="true" signature="2960:3124" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Missing/views/add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="20" column="7" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Missing/views/comment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1075">
+              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Missing/views/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Missing/views/index.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="missing.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Missing/public/javascripts/missing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1775">
+              <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+              <folding>
+                <marker date="1471692458583" expanded="true" signature="1561:1563" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Missing/views/profile.html" />
+        <option value="$PROJECT_DIR$/Missing/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/Missing/views/index.html" />
+        <option value="$PROJECT_DIR$/Missing/views/add.html" />
+        <option value="$PROJECT_DIR$/Missing/views/comment.html" />
+        <option value="$PROJECT_DIR$/Missing/routes/index.js" />
+        <option value="$PROJECT_DIR$/Missing/public/javascripts/missing.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="width" value="1927" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TugasWebService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Missing" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ajou\WebstormProjects\TugasWebService\Missing\public\stylesheets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.comment.html">
+    <configuration default="false" name="www" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="www" working-dir="$PROJECT_DIR$/Missing/bin">
+      <method />
+    </configuration>
+    <configuration default="false" name="add.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TugasWebService/Missing/views/add.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="comment.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TugasWebService/Missing/views/comment.html">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.www" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.add.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.comment.html" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.www" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.comment.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.add.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e50e6794-6021-4e14-a5f6-69fee7607863" name="Default" comment="" />
+      <created>1471526476998</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1471526476998</updated>
+      <workItem from="1471526478170" duration="263000" />
+      <workItem from="1471577122969" duration="2989000" />
+      <workItem from="1471595674599" duration="10128000" />
+      <workItem from="1471666063263" duration="21355000" />
+      <workItem from="1471692642745" duration="336000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="35071000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="0" width="1927" height="1048" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16648993" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.078142695" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.200453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Missing/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4025">
+          <caret line="161" column="18" selection-start-line="161" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+          <folding>
+            <marker date="1471692782947" expanded="true" signature="2960:3124" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="7" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/public/javascripts/missing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1775">
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+          <folding>
+            <marker date="1471692458583" expanded="true" signature="1561:1563" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="21" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/views/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="7" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/public/javascripts/missing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1775">
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+          <folding>
+            <marker date="1471692458583" expanded="true" signature="1561:1563" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missing/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6075">
+          <caret line="269" column="21" selection-start-line="269" selection-start-column="21" selection-end-line="269" selection-end-column="21" />
+          <folding>
+            <marker date="1471692782947" expanded="true" signature="2960:3124" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
