@@ -16,47 +16,51 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar">This one</span>
+                    <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="/Missing/public/resource/Logo.png" width="150" height="30">
+                    <img src="/Missing/public/resource/Logo.jpg" width="150" height="150">
                 </a>
             </div>
-            <div class="col-sm-6 col-md-6 pull-right">
+            <div class="col-sm-8 col-md-8 pull-right">
 
-                <form class="navbar-form navbar-left" role="search">
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Search">
-                        </td>
-
-                        <td>
-                            <select class="form-control" id="sel1">
-                                <option>Name</option>
-                                <option>Reward</option>
-                                <option>Characteristics</option>
-                            </select>
-                        </td>
-
-                        <td>
-                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                        </td>
-                    </tr>
-                    <div class="form-group">
-                    </div>
-
-                </form>
-                <div id="navbar" class="navbar-collapse collapse">
+                <div id="navbar" class="navbar-collapse collapse pull-right">
                     <form class="navbar-form navbar-right">
                         <a href="add.html" class="btn btn-primary">
                             <span class="glyphicon glyphicon-plus"></span> Add
                         </a>
                     </form>
+                    <form class="navbar-form navbar-left pull-right" role="search">
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Search">
+                            </td>
+
+                            <td>
+                                <select class="form-control" id="sel1">
+                                    <option>Name</option>
+                                    <option>Reward</option>
+                                    <option>Characteristics</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <button type="submit" class="btn btn-default"><span
+                                        class="glyphicon glyphicon-search"></span></button>
+                            </td>
+                        </tr>
+                        <div class="form-group">
+                        </div>
+
+                    </form>
                 </div><!--/.navbar-collapse -->
+
+
             </div>
 
         </div>
@@ -86,7 +90,8 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Best place to find!</h1>
-                    <p>Million of bounty haunters and truepenny will help you to find someone who very valuable for you.</p>
+                    <p>Million of bounty haunters and truepenny will help you to find someone who very valuable for
+                        you.</p>
                     <p><a class="btn btn-lg btn-primary" href="add.html" role="button">Add him/her!</a></p>
                 </div>
             </div>
@@ -106,14 +111,18 @@
     <!-- Three columns of text below the carousel -->
 
     <div class="row">
-        <div class="col-lg-4" >
-            <img class="img-circle" src="https://scontent.xx.fbcdn.net/v/t1.0-9/311740_2329450202882_4583798_n.jpg?oh=8f7200c13e71cb2b3f7b3094e53bfb7e&oe=5840F322" alt="Generic placeholder image" width="140" height="140">
+        <div class="col-lg-4">
+            <img class="img-circle"
+                 src="https://scontent.xx.fbcdn.net/v/t1.0-9/311740_2329450202882_4583798_n.jpg?oh=8f7200c13e71cb2b3f7b3094e53bfb7e&oe=5840F322"
+                 alt="Generic placeholder image" width="140" height="140">
             <h2>Aditya Zulfahmi</h2>
             <p>Reward : $30000</p>
             <p><a class="btn btn-default" href="profile.html/fahmi" role="button">View details »</a></p>
         </div>
-        <div class="col-lg-4" ng-repeat = "member in members">
-            <img class="img-circle" src="https://scontent.xx.fbcdn.net/v/t1.0-9/311740_2329450202882_4583798_n.jpg?oh=8f7200c13e71cb2b3f7b3094e53bfb7e&oe=5840F322" alt="Generic placeholder image" width="140" height="140">
+        <div class="col-lg-4" ng-repeat="member in members">
+            <img class="img-circle"
+                 src="https://scontent.xx.fbcdn.net/v/t1.0-9/311740_2329450202882_4583798_n.jpg?oh=8f7200c13e71cb2b3f7b3094e53bfb7e&oe=5840F322"
+                 alt="Generic placeholder image" width="140" height="140">
             <h2>{{member.name}}</h2>
             <p>Reward : ${{member.reaward}}</p>
             <p><a class="btn btn-default" href="profile.html/{{member.name}}" role="button">View details »</a></p>
