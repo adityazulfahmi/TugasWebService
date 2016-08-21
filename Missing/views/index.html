@@ -135,8 +135,9 @@
                 <img class="img-circle" src="{{member.photo}}" alt="Generic placeholder image" width="140" height="140">
                 <h2>{{member.name}}</h2>
                 <p>Reward : ${{member.reward}}</p>
+                <!--<p>Id : {{member._id}}</p>-->
 
-                <p><a class="btn btn-default" href="profile.html/{{member.name}}" role="button">View details »</a></p>
+                <p><a class="btn btn-default" ng-click= "loadProfile(member._id)" role="button">View details »</a></p>
 
             </div>
 

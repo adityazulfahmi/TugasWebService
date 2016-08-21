@@ -12,7 +12,7 @@ var mongoose = require ('mongoose');
 var Scheme = mongoose.Schema({
   photo : String,
   name  : String,
-  dob   : Date,
+  dob   : String,
   pob   : String,
   hair  : String,
   eyes  : String,
@@ -26,6 +26,7 @@ var Scheme = mongoose.Schema({
   details:String,
   contact:String,
   year  : Number,
+  timestamp : { type : Date, default: Date.now },
   comments :[{
     email: String,
     comment: String
@@ -197,7 +198,7 @@ router.get('/people', function(req, res, err) {
       return res.status(500).send({error : 'database Failure'});
     console.log(people);
     res.json(people);
-  })
+  }).sort( { timestamp: -1 } )
 });
 
 router.get('/people/:id', function(req, res, err) {

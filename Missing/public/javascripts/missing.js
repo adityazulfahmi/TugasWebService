@@ -18,13 +18,16 @@ module.controller('addCtrl', ['$scope', '$http' ,'$window' ,'Upload',  function 
     $scope.upload = function () {
         var date = new Date();
         $scope.year = date.getFullYear();
+
+        var fixedDOB = $scope.dob.split("T");
+        alert(fixedDOB[0]);
         Upload.upload({
                 url : 'http://localhost:3000/add',
                 method : 'POST',
                 data : {
                     photo    : $scope.file,
                     name    : $scope.name,
-                    dob     : $scope.dob,
+                    dob     : fixedDOB[0],
                     pob     : $scope.pob,
                     hair    : $scope.hair,
                     eyes    : $scope.eyes,
@@ -83,8 +86,31 @@ module.controller('CommentCtrl', ['$scope', '$http' , function ($scope, $http) {
     };
 }]);
 
+module.controller('profileCtrl', ['$scope', '$http','$window' ,'$resource' , function ($scope, $http, $window, $resource) {
+    // $scope.user ={};
+    // $scope.user.username ='';
+   $scope.id = $window.location.hash.substring(1);
+    alert($scope.id);
 
-module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resource) {
+    var ShowProfile = $resource('http://localhost:3000/people/:id',
+        {id : 'id'},
+        {'get' : {method: 'GET', isArray :false}}
+    );
+
+    ShowProfile.get({id :$scope.id}).
+    $promise.then(function (information) {
+        $scope.person   =information;
+        alert(JSON.stringify($scope.person));
+
+    }, function (errResponse) {
+        alert(errResponse);
+        // alert('error')
+    });
+
+}]);
+
+
+module.controller('searchCtrl', ['$scope','$resource','$window' ,'serviceId' , function ($scope, $resource, $window, serviceId) {
     //var Team = $resource('http://localhost:3000/users/:userName/:rrr',
     //  {userName : '@userName', rrr :'@w'},
     // $scope.user ={};
@@ -119,23 +145,6 @@ module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resour
         {'get' : {method: 'GET', isArray :false}}
     );
 
-    // $scope.loadProfile = function ($id) {
-    //     alert($scope.category);
-    //     alert($scope.keyword);
-    //     if ($scope.category == "name") {
-    //
-    //         if ($scope.keyword != null) {
-    //             FindByName.get({name: $scope.keyword}).$promise.then(function (information) {
-    //                 $scope.members = information;
-    //
-    //             }, function (errResponse) {
-    //                 alert(errResponse);
-    //                 // alert('error')
-    //             });
-    //
-    //         }
-    //     }
-    // }
 
     $scope.ShowAll = function () {
                 ShowAll.get().
@@ -146,6 +155,13 @@ module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resour
                     alert(errResponse);
                     // alert('error')
                 });
+    }
+    
+    $scope.loadProfile= function (id) {
+        // serviceId.set(id);
+        alert(id);
+        $window.location.href = 'profile.html'+'#'+id;
+
     }
 
     $scope.searchSubmit = function () {
@@ -204,165 +220,21 @@ module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resour
 
         }
     }
-
-    // $scope.getPersonbyName = function () {
-    //
-    // }
-    //
-    // $scope.getPersonbySex = function () {
-    //     if($scope.name !=null){
-    //         FindBySex.query().
-    //         $promise.then(function (information) {
-    //             $scope.members =information;
-    //
-    //         }, function (errResponse) {
-    //             alert(errResponse);
-    //             // alert('error')
-    //         });
-    //
-    //     }
-    // }
-    //
-    // $scope.getPersonbyYear = function () {
-    //     if($scope.name !=null){
-    //         FindByYear.query().
-    //         $promise.then(function (information) {
-    //             $scope.members =information;
-    //
-    //         }, function (errResponse) {
-    //             alert(errResponse);
-    //             // alert('error')
-    //         });
-    //
-    //     }
-    // }
-    //
-    // $scope.submit = function () {
-    //     if($scope.username != null)
-    //     {
-    //
-    //         //Team.get({userName: $scope.username, rrr: $scope.rrr}).
-    //         Team.get({userName: $scope.username}).
-    //         $promise.then(function (information) {
-    //             $scope.username1 = information.username;
-    //             $scope.nickname1 = information.nickname;
-    //
-    //         }, function (errResponse) {
-    //             alert(errResponse);
-    //             //fail
-    //         });
-    //     }
-    //     else
-    //     {
-    //         Team.query().
-    //         $promise.then(function (information) {
-    //             $scope.members = information;
-    //         },function (errResponse) {
-    //             alert(errResponse);
-    //         });
-    //     }
-    // }
-
 }]);
 
-// module.controller('profileCtrl', ['$scope','$resource', function ($scope, $resource) {
-//     //var Team = $resource('http://localhost:3000/users/:userName/:rrr',
-//     //  {userName : '@userName', rrr :'@w'},
-//     // $scope.user ={};
-//     // $scope.user.username ='';
-//
-//     var showProfile = $resource('http://localhost:3000/people/:id',
-//         {id : '@id'},
-//         {'get' : {method: 'GET', isArray :false}}
-//     );
-//
-//     $scope.loadProfile = function () {
-//         alert($scope.category );
-//         alert($scope.keyword);
-//         if($scope.category == "name"){
-//
-//             if($scope.keyword !=null){
-//                 FindByName.get({name :$scope.keyword}).
-//                 $promise.then(function (information) {
-//                     $scope.members =information;
-//
-//                 }, function (errResponse) {
-//                     alert(errResponse);
-//                     // alert('error')
-//                 });
-//
-//             }
-//
-//         }else if ($scope.category == "year"){
-//             if($scope.keyword !=null){
-//                 FindByYear.get({year :$scope.keyword}).
-//                 $promise.then(function (information) {
-//                     $scope.members =information;
-//
-//                 }, function (errResponse) {
-//                     alert(errResponse);
-//                     // alert('error')
-//                 });
-//             }
-//
-//         }else if ($scope.category == "reward"){
-//             if($scope.keyword !=null){
-//                 FindByReward.get({reward :$scope.keyword}).
-//                 $promise.then(function (information) {
-//                     $scope.members =information;
-//                     alert("reward search sent")
-//
-//                 }, function (errResponse) {
-//                     alert(errResponse);
-//                     // alert('error')
-//                 });
-//             }
-//
-//         }else if ($scope.category == "sex"){
-//             if($scope.keyword !=null){
-//                 FindBySex.get({sex :$scope.keyword}).
-//                 $promise.then(function (information) {
-//                     $scope.members =information;
-//
-//                 }, function (errResponse) {
-//                     alert(errResponse);
-//                     // alert('error')
-//                 });
-//             }
-//
-//         }
-//     }]);
+module.factory('serviceId', function() {
+    var id = "";
+    function set(data) {
+        id = data;
+    }
+    function get() {
+        return id;
+    }
 
+    return {
+        set: set,
+        get: get
+    }
 
-
-// $scope.getPersonbyName = function () {
-//     if($scope.name !=null){
-//         FindByName.query().
-//         $promise.then(function (information) {
-//             $scope.members =information;
-//
-//             // $scope.name = information.name;
-//             // $scope.dob = information.dob;
-//             // $scope.pob = information.pob;
-//             // $scope.hair = information.hair;
-//             // $scope.eyes = information.eyes;
-//             // $scope.height = information.height;
-//             // $scope.photo = information.photo;
-//             // $scope.weight = information.weight;
-//             // $scope.sex = information.sex;
-//             // $scope.race = information.race;
-//             // $scope.sam = information.sam;
-//             // $scope.reward = information.reward;
-//             // $scope.remarks = information.remarks;
-//             // $scope.details = information.details;
-//             // $scope.contact = information.contact;
-//             // $scope.year = information.year;
-//
-//         }, function (errResponse) {
-//             alert(errResponse);
-//             // alert('error')
-//         });
-//
-//     }
-// }
+});
 

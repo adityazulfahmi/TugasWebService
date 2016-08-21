@@ -39,7 +39,7 @@
     </nav>
 </header>
 <hr>
-<body>
+<body ng-app="missingApp" ng-controller="profileCtrl">
 
 <div class="container">
     <div class="row">
@@ -53,7 +53,7 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-3 col-lg-3 " align="center"><img alt="User Pic"
-                                                                            src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png"
+                                                                            src="{{person.photo}}"
                                                                             class="img-circle img-responsive"></div>
 
                         <div class=" col-md-9 col-lg-9 ">
@@ -75,7 +75,7 @@
                                 </tr>
                                 <tr>
                                     <td>Sex:</td>
-                                    <td>{{person.sex}}HOMO</td>
+                                    <td>{{person.sex}}</td>
                                 </tr>
                                 <tr>
                                     <td>Hair/Eyes:</td>
