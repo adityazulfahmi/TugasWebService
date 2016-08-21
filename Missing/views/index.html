@@ -22,7 +22,7 @@
     <script src="../node_modules/ng-file-upload/dist/ng-file-upload-shim.js"></script>
     <script src="../node_modules/ng-file-upload/dist/ng-file-upload-shim.js"></script>
 </head>
-<div ng-init="getPerson()" >
+<div ng-init="ShowAll()" >
 
 <header>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -140,29 +140,30 @@
 
     </div>
 </div>
-<div>
-    <ul>
-    <li ng-repeat="member in members">
-        id  : {{member._id}} <br/>
-        photo       : {{member.photo}}<br />
-        name        : {{member.name}}<br />
-        dob         : {{member.dob}}<br />
-        pob         : {{member.pob}}<br />
-        hair        : {{member.hair}}<br />
-        eyes        : {{member.eye}}<br />
-        height      : {{member.height}}<br />
-        weight      : {{member.weight}}<br />
-        sex         : {{member.sex}}<br />
-        race        : {{member.race}}<br />
-        sam         : {{member.sam}}<br />
-        reward      : {{member.reward}}<br />
-        remarks     : {{member.remarks}}<br />
-        details     : {{member.details}}<br />
-        contact     : {{member.contact}}<br />
-        year        : {{member.year}}<br />
-    </li>
-</ul>
-</div>
+
+<!--<div>-->
+    <!--<ul>-->
+    <!--<li ng-repeat="member in members">-->
+        <!--id  : {{member._id}} <br/>-->
+        <!--photo       : {{member.photo}}<br />-->
+        <!--name        : {{member.name}}<br />-->
+        <!--dob         : {{member.dob}}<br />-->
+        <!--pob         : {{member.pob}}<br />-->
+        <!--hair        : {{member.hair}}<br />-->
+        <!--eyes        : {{member.eye}}<br />-->
+        <!--height      : {{member.height}}<br />-->
+        <!--weight      : {{member.weight}}<br />-->
+        <!--sex         : {{member.sex}}<br />-->
+        <!--race        : {{member.race}}<br />-->
+        <!--sam         : {{member.sam}}<br />-->
+        <!--reward      : {{member.reward}}<br />-->
+        <!--remarks     : {{member.remarks}}<br />-->
+        <!--details     : {{member.details}}<br />-->
+        <!--contact     : {{member.contact}}<br />-->
+        <!--year        : {{member.year}}<br />-->
+    <!--</li>-->
+<!--</ul>-->
+<!--</div>-->
 </body>
 
 </div>

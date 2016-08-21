@@ -72,6 +72,7 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
   console.log("user is submitting "+ photo);
   var imageUpload = targetPath;
 
+  var result = dbPath.replace("\\", "/");
 
   console.log(
       "photo :"+photo+"\n"+
@@ -93,7 +94,7 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
   );
 
   var person = new Missing({
-    photo : dbPath,
+    photo : result,
     name  : name,
     dob   : dob,
     pob   : pob,

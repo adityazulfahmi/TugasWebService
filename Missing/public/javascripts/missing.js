@@ -89,6 +89,10 @@ module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resour
     //  {userName : '@userName', rrr :'@w'},
     // $scope.user ={};
     // $scope.user.username ='';
+    var ShowAll = $resource('http://localhost:3000/people',
+        {people : 'people'},
+        {'get' : {method: 'GET', isArray :true}}
+    );
 
     var FindByName = $resource('http://localhost:3000/people/name/:name',
         {name : '@userName'},
@@ -132,6 +136,17 @@ module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resour
     //         }
     //     }
     // }
+
+    $scope.ShowAll = function () {
+                ShowAll.get().
+                $promise.then(function (information) {
+                    $scope.members =information;
+
+                }, function (errResponse) {
+                    alert(errResponse);
+                    // alert('error')
+                });
+    }
 
     $scope.searchSubmit = function () {
         alert($scope.category );
