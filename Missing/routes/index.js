@@ -221,8 +221,9 @@ router.get('/people/sex/:sex', function(req, res, err) {
 router.get('/people/name/:name', function(req, res, err) {
 
   var people = new Missing();
+  var key = req.params.name;
 
-  Missing.find({name: {'$regex':req.params.name}},function (err, people) {
+  Missing.find({name: {'$regex': new RegExp(key, "i")}},function (err, people) {
     if(err) {
       console.err(err);
       throw err;
