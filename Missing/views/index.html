@@ -49,7 +49,10 @@
                                 </a>
                             </form>
                             <form class="navbar-form navbar-left" role="search" ng-submit="searchSubmit()" name="searchForm" id="searchForm">
-                                <input type="text" class="form-control" name="keyword" id="keyword" placeholder="Search" ng-model="keyword" required>
+
+                                <input type="{{formType}}" class="form-control" name="keyword" id="keywordText" placeholder="Search"  ng-model="keyword" required>
+
+
                                 <tr>
                                     <td>
                                     </td>

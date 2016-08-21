@@ -122,6 +122,7 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
 
     $scope.category = "name";
     $scope.keyword = "";
+    $scope.formType = "text";
 
     var ShowAll = $resource('http://localhost:3000/people',
         {people: 'people'},
@@ -143,7 +144,7 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
         {'get': {method: 'GET', isArray: true}}
     );
 
-    var FindByReward = $resource('http://localhost:3000/reward',
+    var FindByReward = $resource('http://localhost:3000/reward/:reward',
         {reward: '@reward'},
         {'get': {method: 'GET', isArray: true}}
     );
@@ -195,7 +196,6 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
             if ($scope.keyword != null) {
                 FindByReward.get({reward: $scope.keyword}).$promise.then(function (information) {
                     $scope.members = information;
-                    alert("reward search sent")
 
                 }, function (errResponse) {
                     alert(errResponse);
@@ -217,7 +217,19 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
     };
 
     $scope.$watch('category', function () {
-        $scope.keyword = "";
+        if($scope.category=="sex"){
+            $scope.keyword = "male";
+            $scope.formType="text";
+        }
+        else if ($scope.category=="name"){
+            $scope.formType="text";
+            $scope.keyword = "";
+        }
+        else{
+            $scope.formType="number";
+            $scope.keyword = "";
+        }
+
     });
 
     $scope.$watch('keyword', function () {

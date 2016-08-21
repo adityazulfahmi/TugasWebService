@@ -206,8 +206,10 @@ router.get('/people/year/:year', function(req, res, err) {
 router.get('/people/sex/:sex', function(req, res, err) {
 
   var people = new Missing();
+  var key = req.params.sex;
+  key = "^"+key;
 
-  Missing.find({sex: req.params.sex},function (err, people) {
+  Missing.find({sex: {'$regex': new RegExp(key, "i")}},function (err, people) {
     if(err) {
       console.err(err);
       throw err;
@@ -234,10 +236,11 @@ router.get('/people/name/:name', function(req, res, err) {
 });
 
 // //reward
-router.get('/reward', function(req, res, err) {
+router.get('/reward/:reward', function(req, res, err) {
   var people = new Missing();
+  var key = req.params.reward;
 
-  Missing.find(function (err, people) {
+  Missing.find({reward: {$gte:key}},function (err, people) {
     if(err) {
       console.err(err);
       throw err;
