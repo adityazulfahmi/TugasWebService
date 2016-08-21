@@ -65,12 +65,14 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
   var uploadDate = new Date().toDateString();
   var tempPath = photo.path;
   console.log("temp Path: "+tempPath);
-  var dbPath ="http:localhost:3000/Image/"+photo.name;
+
+  var dbPath ="http://localhost:3000/Image/"+uploadDate +" "+ photo.name;
   var targetPath = path.join(__dirname, "../public/image/" +uploadDate +" "+ photo.name);
   // contact.log("targetPath"+ targetPath);
   console.log("user is submitting "+ photo);
   var imageUpload = targetPath;
 
+  var result = dbPath.replace("\\", "/");
 
   console.log(
       "photo :"+photo+"\n"+
@@ -92,7 +94,7 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
   );
 
   var person = new Missing({
-    photo : dbPath,
+    photo : result,
     name  : name,
     dob   : dob,
     pob   : pob,
