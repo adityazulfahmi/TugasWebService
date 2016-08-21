@@ -64,6 +64,7 @@ module.controller('CommentCtrl', ['$scope', '$http' ,'$window', function ($scope
     // $scope.user.username ='';
     $scope.id = $window.location.hash.substring(1);
     alert($scope.id);
+
     $scope.submitComment = function () {
 
         alert("send comment");
@@ -83,6 +84,7 @@ module.controller('CommentCtrl', ['$scope', '$http' ,'$window', function ($scope
                 if( data ) {
                     alert(data);
                     console.log("hore2");
+                    $window.location.reload();
                 }
                 else {
                 }

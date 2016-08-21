@@ -170,6 +170,7 @@ router.post('/addComment', function(req, res, next) {
               console.log(err.message);
               throw err;
             }
+            res.json("success");
           }
       );
   //console.log("haha");
