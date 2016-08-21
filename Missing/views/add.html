@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="missingApp" >
 <head>
     <meta charset="UTF-8">
     <title>Add Missing Person</title>
@@ -11,12 +11,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-resource.js"></script>
 
-    <script src="../public/javascripts/missing.js"></script>
+    <!--<script src="../public/javascripts/missing.js"></script>-->
     <script src="../node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
     <script src="../node_modules/ng-file-upload/dist/ng-file-upload-all.js"></script>
     <script src="../node_modules/ng-file-upload/dist/ng-file-upload-shim.js"></script>
 
-    <script src="/Missing/public/javascripts/missing.js"></script>
+    <!--<script src="/Missing/public/javascripts/missing.js"></script>-->
+    <script src="../public/javascripts/missing.js"></script>
+    <script src="../public/javascripts/angular.js"></script>
+    <script src="../public/javascripts/angular-resource.js"></script>
+    <script src="../public/javascripts/angular-route.js"></script>
+
 
 </head>
 
@@ -39,7 +44,7 @@
     </nav>
 </header>
 <hr>
-<body ng-app="missingApp" ng-controller="MainCtrl">
+<body ng-controller="MainCtrl">
 <div class="container">
 
     <div class="row">

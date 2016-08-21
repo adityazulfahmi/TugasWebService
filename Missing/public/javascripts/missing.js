@@ -1,53 +1,12 @@
 /**
  * Created by ajou on 8/19/2016.
  */
-var module = angular.module('missingApp', ['ngFileUpload, ngResource']);
-module.controller('MainCtrl', ['$scope', '$http' ,'$window' ,'Upload', '$resource', function ($scope, $http, $window, Upload,$resource) {
+var module = angular.module('missingApp', ['ngFileUpload', 'ngResource']);
+module.controller('MainCtrl', ['$scope', '$http' ,'$window' ,'Upload', function ($scope, $http, $window, Upload) {
     // $scope.user ={};
     // $scope.user.username ='';
     $scope.user ={};
     $scope.user.username ='';
-    var FindByName = $resource('http://localhost:3000/people/name/:name',
-        {name : '@userName'},
-        {'get' : {method: 'GET', isArray :false}},
-        {'query' : {method: 'GET', isArray:true}}
-    );
-
-    $scope.getPerson = function () {
-        if($scope.name !=null){
-            FindByName.query().
-            $promise.then(function (information) {
-                $scope.members =information;
-
-                // $scope.name = information.name;
-                // $scope.dob = information.dob;
-                // $scope.pob = information.pob;
-                // $scope.hair = information.hair;
-                // $scope.eyes = information.eyes;
-                // $scope.height = information.height;
-                // $scope.photo = information.photo;
-                // $scope.weight = information.weight;
-                // $scope.sex = information.sex;
-                // $scope.race = information.race;
-                // $scope.sam = information.sam;
-                // $scope.reward = information.reward;
-                // $scope.remarks = information.remarks;
-                // $scope.details = information.details;
-                // $scope.contact = information.contact;
-                // $scope.year = information.year;
-
-            }, function (errResponse) {
-                alert(errResponse);
-                // alert('error')
-            });
-
-        }
-    }
-
-
-
-
-
     $scope.submit = function () {
         $scope.upload($scope.file);
     }
@@ -119,4 +78,46 @@ module.controller('CommentCtrl', ['$scope', '$http' , function ($scope, $http) {
                 console.log(status);
             });
     };
+}]);
+
+module.controller('searchCtrl', ['$scope', '$resource' , function ($scope, $resource) {
+    var FindByName = $resource('http://localhost:3000/people',
+        {name : '@userName'},
+        {'get' : {method: 'GET', isArray :false}},
+        {'query' : {method: 'GET', isArray:true}}
+    );
+
+    $scope.getPerson = function () {
+
+            FindByName.query().
+            $promise.then(function (information) {
+                $scope.members =information;
+
+                // $scope.name = information.name;
+                // $scope.dob = information.dob;
+                // $scope.pob = information.pob;
+                // $scope.hair = information.hair;
+                // $scope.eyes = information.eyes;
+                // $scope.height = information.height;
+                // $scope.photo = information.photo;
+                // $scope.weight = information.weight;
+                // $scope.sex = information.sex;
+                // $scope.race = information.race;
+                // $scope.sam = information.sam;
+                // $scope.reward = information.reward;
+                // $scope.remarks = information.remarks;
+                // $scope.details = information.details;
+                // $scope.contact = information.contact;
+                // $scope.year = information.year;
+
+            }, function (errResponse) {
+                alert(errResponse);
+                // alert('error')
+            });
+
+
+    }
+
+
+
 }]);
