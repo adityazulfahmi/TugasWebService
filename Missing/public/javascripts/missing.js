@@ -18,16 +18,22 @@ module.controller('addCtrl', ['$scope', '$http' ,'$window' ,'Upload',  function 
     $scope.upload = function () {
         var date = new Date();
         $scope.year = date.getFullYear();
+        
+        var fixedDOB = $scope.dob;
 
-        var fixedDOB = $scope.dob.split("T");
-        alert(fixedDOB[0]);
+        if (typeof $scope.dob != 'undefined')
+        {
+            fixedDOB = $scope.dob.split("T");
+            fixedDOB=fixedDOB[0];
+        }
+
         Upload.upload({
                 url : 'http://localhost:3000/add',
                 method : 'POST',
                 data : {
                     photo    : $scope.file,
                     name    : $scope.name,
-                    dob     : fixedDOB[0],
+                    dob     : fixedDOB,
                     pob     : $scope.pob,
                     hair    : $scope.hair,
                     eyes    : $scope.eyes,
@@ -47,7 +53,7 @@ module.controller('addCtrl', ['$scope', '$http' ,'$window' ,'Upload',  function 
                 console.log("firing");
 
             }).success(function (data) {
-                alert("Success to add person");
+                alert("Successfully added person");
                 $window.location.href = 'index.html';
 
             }).error(function (error) {
@@ -63,12 +69,9 @@ module.controller('CommentCtrl', ['$scope', '$http' ,'$window', function ($scope
     // $scope.user ={};
     // $scope.user.username ='';
     $scope.id = $window.location.hash.substring(1);
-    alert($scope.id);
+
 
     $scope.submitComment = function () {
-
-        alert("send comment");
-        console.log("hore");
 
         $http({
             method : 'POST',
@@ -82,8 +85,7 @@ module.controller('CommentCtrl', ['$scope', '$http' ,'$window', function ($scope
         })
             .success(function(data, status, headers, config) {
                 if( data ) {
-                    alert(data);
-                    console.log("hore2");
+                    alert("Successfully Added Information")
                     $window.location.reload();
                 }
                 else {
@@ -99,7 +101,6 @@ module.controller('profileCtrl', ['$scope', '$http','$window' ,'$resource' , fun
     // $scope.user ={};
     // $scope.user.username ='';
    $scope.id = $window.location.hash.substring(1);
-    alert($scope.id);
 
     var ShowProfile = $resource('http://localhost:3000/people/:id',
         {id : 'id'},
@@ -109,11 +110,9 @@ module.controller('profileCtrl', ['$scope', '$http','$window' ,'$resource' , fun
     ShowProfile.get({id :$scope.id}).
     $promise.then(function (information) {
         $scope.person   =information;
-        alert(JSON.stringify($scope.person));
 
     }, function (errResponse) {
         alert(errResponse);
-        // alert('error')
     });
 
 }]);
@@ -161,13 +160,10 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
 
         }, function (errResponse) {
             alert(errResponse);
-            // alert('error')
         });
     }
 
     $scope.loadProfile = function (id) {
-        // serviceId.set(id);
-        alert(id);
         $window.location.href = 'profile.html' + '#' + id;
 
     }
@@ -182,7 +178,6 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
 
                 }, function (errResponse) {
                     alert(errResponse);
-                    // alert('error')
                 });
 
             }
@@ -193,7 +188,6 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
 
                 }, function (errResponse) {
                     alert(errResponse);
-                    // alert('error')
                 });
             }
 
@@ -216,7 +210,6 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
 
                 }, function (errResponse) {
                     alert(errResponse);
-                    // alert('error')
                 });
             }
 
@@ -248,7 +241,6 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
 
                     }, function (errResponse) {
                         alert(errResponse);
-                        // alert('error')
                     });
                 }
 
@@ -256,11 +248,9 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
                 if ($scope.keyword != null) {
                     FindByReward.get({reward: $scope.keyword}).$promise.then(function (information) {
                         $scope.members = information;
-                        alert("reward search sent")
 
                     }, function (errResponse) {
                         alert(errResponse);
-                        // alert('error')
                     });
                 }
 
@@ -271,7 +261,7 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
 
                     }, function (errResponse) {
                         alert(errResponse);
-                        // alert('error')
+
                     });
                 }
 
@@ -284,6 +274,7 @@ module.controller('searchCtrl', ['$scope','$resource','$window' , function ($sco
 
 module.filter('reverse', function() {
     return function(items) {
+        if(!items || !items.length){return;}
         return items.slice().reverse();
     };
 });

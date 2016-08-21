@@ -44,9 +44,7 @@ mongoose.connect('mongodb://localhost/missingdb', function (err) {
 })
 
 router.post('/add', multiPartMiddleware, function(req, res, next) {
-  console.log("woy");
   var photo   = req.files.photo;
-  console.log("user is submitting "+ photo);
   var name    = req.body.name;
   var dob     = req.body.dob;
   var pob     = req.body.pob;
@@ -66,34 +64,32 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
   //upload photo
   var uploadDate = new Date().toDateString();
   var tempPath = photo.path;
-  console.log("temp Path: "+tempPath);
 
   var dbPath ="http://localhost:3000/Image/"+uploadDate +" "+ photo.name;
   var targetPath = path.join(__dirname, "../public/image/" +uploadDate +" "+ photo.name);
-  // contact.log("targetPath"+ targetPath);
-  console.log("user is submitting "+ photo);
+
   var imageUpload = targetPath;
 
   var result = dbPath.replace("\\", "/");
 
-  console.log(
-      "photo :"+photo+"\n"+
-      "name  :"+name+"\n"+
-      "dob   :"+dob+"\n"+
-      "pob   :"+pob+"\n"+
-      "hair  :"+hair+"\n"+
-      "eyes  :"+eyes+"\n"+
-      "height:"+height+"\n"+
-      "weight:"+weight+"\n"+
-      "sex   :"+sex+"\n"+
-      "race  :"+race+"\n"+
-      "sam   :"+sam+"\n"+
-      "reward:"+reward+"\n"+
-      "remarks:"+remarks+"\n"+
-      "details:"+details+"\n"+
-      "contact:"+contact+"\n"+
-      "year  :"+year
-  );
+  // console.log(
+  //     "photo :"+photo+"\n"+
+  //     "name  :"+name+"\n"+
+  //     "dob   :"+dob+"\n"+
+  //     "pob   :"+pob+"\n"+
+  //     "hair  :"+hair+"\n"+
+  //     "eyes  :"+eyes+"\n"+
+  //     "height:"+height+"\n"+
+  //     "weight:"+weight+"\n"+
+  //     "sex   :"+sex+"\n"+
+  //     "race  :"+race+"\n"+
+  //     "sam   :"+sam+"\n"+
+  //     "reward:"+reward+"\n"+
+  //     "remarks:"+remarks+"\n"+
+  //     "details:"+details+"\n"+
+  //     "contact:"+contact+"\n"+
+  //     "year  :"+year
+  // );
 
   var person = new Missing({
     photo : result,
@@ -113,7 +109,6 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
     contact:contact,
     year  :year
   });
-  // console.log("sampai?");
 
   fs.rename(tempPath, targetPath, function (err) {
     if(err){
@@ -123,7 +118,7 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
       console.log(targetPath);
     }
   })
-  // console.log("sampai ga?");
+
 
   person.save(function (err, silence) {
     if(err){
@@ -145,15 +140,6 @@ router.post('/addComment', function(req, res, next) {
   var ObjectId = require('mongodb').ObjectID;
   var o_id = new ObjectId(id);
 
-
-  console.log(
-      "id :"+id+"\n"+
-      "email :"+iemail+"\n"+
-      "comment  :"+icomment+"\n"+
-      "oid  :"+o_id+"\n"+
-      "date :"+idate+"\n"
-  );
-
   //console.log("hoho");
   Missing.update({_id: o_id},
       {
@@ -173,25 +159,6 @@ router.post('/addComment', function(req, res, next) {
             res.json("success");
           }
       );
-  //console.log("haha");
-});
-
-router.get('/trypeople', function(req, res, err) {
-
-  var id = "57b7e1c6c38da0a81faa2a7c";
-  var ObjectID = require('mongodb').ObjectID;
-  var o_id = new ObjectID(id);
-
-  var person = new Missing();
-
-  Missing.find({_id: o_id},function (err, person) {
-    if(err) {
-      console.err(err);
-      throw err;
-    }
-    console.log(person);
-    res.json(person);
-  })
 });
 
 router.get('/people', function(req, res, err) {
@@ -221,7 +188,6 @@ router.get('/people/:id', function(req, res, err) {
 });
 
 //year
-//db.mycol.find({"by":"tutorials point"}).pretty()
 router.get('/people/year/:year', function(req, res, err) {
 
   var people = new Missing();
