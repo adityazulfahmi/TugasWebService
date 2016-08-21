@@ -65,7 +65,9 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
   var uploadDate = new Date().toDateString();
   var tempPath = photo.path;
   console.log("temp Path: "+tempPath);
-  var targetPath = path.join(__dirname, "../public/image/" +uploadDate +" "+ photo.name);
+  var targetPath = path.join("localhost:3000/Image/" +uploadDate +" "+ photo.name);
+  // console.log($window.pathname());
+
   // contact.log("targetPath"+ targetPath);
   console.log("user is submitting "+ photo);
   var imageUpload = targetPath;

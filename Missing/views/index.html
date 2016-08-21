@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="missingApp" ng-controller="searchCtrl">
 <head>
     <meta charset="UTF-8">
     <title>Missing</title>
@@ -10,6 +10,16 @@
 
     <script src="/Missing/public/stylesheets/bootstrap-3.3.7-dist/js/jquery.min.js"></script>
     <script src="/Missing/public/stylesheets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-resource.js"></script>
+
+    <script src="../public/javascripts/missing.js"></script>
+    <script src="../node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
+    <script src="../node_modules/ng-file-upload/dist/ng-file-upload-all.js"></script>
+    <script src="../node_modules/ng-file-upload/dist/ng-file-upload-shim.js"></script>
+
 </head>
 
 <header>
@@ -28,17 +38,19 @@
             </div>
             <div class="col-sm-6 col-md-6 pull-right">
 
-                <form class="navbar-form navbar-left" role="search">
+                <form class="navbar-form navbar-left" role="search"  ng-submit="searchSubmit()">
                     <tr>
                         <td>
-                            <input type="text" class="form-control" placeholder="Search">
+                            <input type="text" class="form-control" placeholder="Search" ng-model="keyword">
                         </td>
 
                         <td>
-                            <select class="form-control" id="sel1">
-                                <option>Name</option>
-                                <option>Reward</option>
-                                <option>Characteristics</option>
+                            <select class="form-control" id="sel1" ng-model="category">
+                                <option value="name">Name</option>
+                                <option value="year">Year</option>
+                                <option value="reward">Reward</option>
+                                <option value="sex">Sex</option>
+
                             </select>
                         </td>
 
@@ -102,24 +114,48 @@
     </a>
 </div><!-- /.carousel -->
 
-<div class="container marketing">
     <!-- Three columns of text below the carousel -->
 
+    <div class="container marketing">
     <div class="row">
-        <div class="col-lg-4" >
-            <img class="img-circle" src="https://scontent.xx.fbcdn.net/v/t1.0-9/311740_2329450202882_4583798_n.jpg?oh=8f7200c13e71cb2b3f7b3094e53bfb7e&oe=5840F322" alt="Generic placeholder image" width="140" height="140">
-            <h2>Aditya Zulfahmi</h2>
-            <p>Reward : $30000</p>
-            <p><a class="btn btn-default" href="profile.html/fahmi" role="button">View details »</a></p>
-        </div>
+
+        <!--<div class="col-lg-4" ng-repeat = "member in members">-->
+            <!--<img class="img-circle" src="../public/Image/Sat%20Aug%2020%202016%20ace.jpg" alt="Generic placeholder image" width="140" height="140">-->
+            <!--<h2>ggg</h2>-->
+            <!--<p>Reward : 8888</p>-->
+            <!--<p><a class="btn btn-default" href="profile.html/{{member.name}}" role="button">View details »</a></p>-->
+        <!--</div>-->
         <div class="col-lg-4" ng-repeat = "member in members">
-            <img class="img-circle" src="https://scontent.xx.fbcdn.net/v/t1.0-9/311740_2329450202882_4583798_n.jpg?oh=8f7200c13e71cb2b3f7b3094e53bfb7e&oe=5840F322" alt="Generic placeholder image" width="140" height="140">
+            <img class="img-circle" src="{{member.photo}}" alt="Generic placeholder image" width="140" height="140">
             <h2>{{member.name}}</h2>
-            <p>Reward : ${{member.reaward}}</p>
-            <p><a class="btn btn-default" href="profile.html/{{member.name}}" role="button">View details »</a></p>
+            <p>Reward : ${{member.reward}}</p>
+            <p><a class="btn btn-default" role="button">View details »</a></p>
         </div>
 
     </div>
+</div>
+<div>
+    <ul>
+    <li ng-repeat="member in members">
+        id  : {{member._id}} <br/>
+        photo       : {{member.photo}}<br />
+        name        : {{member.name}}<br />
+        dob         : {{member.dob}}<br />
+        pob         : {{member.pob}}<br />
+        hair        : {{member.hair}}<br />
+        eyes        : {{member.eye}}<br />
+        height      : {{member.height}}<br />
+        weight      : {{member.weight}}<br />
+        sex         : {{member.sex}}<br />
+        race        : {{member.race}}<br />
+        sam         : {{member.sam}}<br />
+        reward      : {{member.reward}}<br />
+        remarks     : {{member.remarks}}<br />
+        details     : {{member.details}}<br />
+        contact     : {{member.contact}}<br />
+        year        : {{member.year}}<br />
+    </li>
+</ul>
 </div>
 </body>
 </html>
