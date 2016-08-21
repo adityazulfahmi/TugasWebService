@@ -10,6 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-resource.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-moment/0.9.0/angular-moment.min.js"></script>
+
 
     <script src="../public/javascripts/missing.js"></script>
     <script src="../node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
@@ -128,17 +131,17 @@
 
     <div class="container" id="information">
         <div class="row">
-            <div class="col-sm-6 col-centered ">
+            <div class="col-sm-6">
                 <h3>Information</h3>
             </div><!-- /col-sm-12 -->
         </div><!-- /row -->
 
         <div class="row">
-            <div class="col-sm-6 col-centered" ng-repeat="comment in person.comments | reverse">
+            <div class="col-sm-6" ng-repeat="comment in person.comments | reverse">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <strong>{{comment.email}}</strong> <span
-                            class="text-muted">commented {{comment.date}} days ago</span>
+                            class="text-muted">commented <time am-time-ago="comment.date"></time></span>
                     </div>
                     <div class="panel-body">
                         {{comment.comment}}

@@ -1,7 +1,7 @@
 /**
  * Created by ajou on 8/19/2016.
  */
-var module = angular.module('missingApp', ['ngFileUpload', 'ngResource']);
+var module = angular.module('missingApp', ['ngFileUpload', 'ngResource','angularMoment']);
 
 module.controller('addCtrl', ['$scope', '$http' ,'$window' ,'Upload',  function ($scope, $http, $window, Upload) {
 
