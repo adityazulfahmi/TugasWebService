@@ -18,7 +18,7 @@ module.controller('addCtrl', ['$scope', '$http' ,'$window' ,'Upload',  function 
     $scope.upload = function () {
         var date = new Date();
         $scope.year = date.getFullYear();
-        
+
         var fixedDOB = $scope.dob;
 
         if (typeof $scope.dob != 'undefined')
