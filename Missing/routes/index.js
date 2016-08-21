@@ -29,7 +29,8 @@ var Scheme = mongoose.Schema({
   timestamp : { type : Date, default: Date.now },
   comments :[{
     email: String,
-    comment: String
+    comment: String,
+    date: Date
   }]
 });
 
@@ -140,6 +141,7 @@ router.post('/addComment', function(req, res, next) {
   var id    = req.body.id;
   var iemail = req.body.email;
   var icomment   = req.body.comment;
+  var idate = req.body.date;
   var ObjectId = require('mongodb').ObjectID;
   var o_id = new ObjectId(id);
 
@@ -148,7 +150,8 @@ router.post('/addComment', function(req, res, next) {
       "id :"+id+"\n"+
       "email :"+iemail+"\n"+
       "comment  :"+icomment+"\n"+
-      "oid  :"+o_id+"\n"
+      "oid  :"+o_id+"\n"+
+      "date :"+idate+"\n"
   );
 
   //console.log("hoho");
@@ -157,7 +160,8 @@ router.post('/addComment', function(req, res, next) {
         $push : {
            comments : {
               email : iemail,
-              comment : icomment
+              comment : icomment,
+             date: idate
            }
         }
   }

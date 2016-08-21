@@ -59,23 +59,30 @@ module.controller('addCtrl', ['$scope', '$http' ,'$window' ,'Upload',  function 
 }]);
 
 
-module.controller('CommentCtrl', ['$scope', '$http' , function ($scope, $http) {
+module.controller('CommentCtrl', ['$scope', '$http' ,'$window', function ($scope, $http, $window) {
     // $scope.user ={};
     // $scope.user.username ='';
+    $scope.id = $window.location.hash.substring(1);
+    alert($scope.id);
     $scope.submitComment = function () {
+
+        alert("send comment");
+        console.log("hore");
 
         $http({
             method : 'POST',
             url : 'http://localhost:3000/addComment',
             data : {
-                id   : "57b7e1c6c38da0a81faa2a7c",
+                id   : $scope.id,
                 email     : $scope.email,
-                comment    : $scope.comment
+                comment    : $scope.comment,
+                date : new Date()
             }
         })
             .success(function(data, status, headers, config) {
                 if( data ) {
                     alert(data);
+                    console.log("hore2");
                 }
                 else {
                 }
@@ -110,69 +117,66 @@ module.controller('profileCtrl', ['$scope', '$http','$window' ,'$resource' , fun
 }]);
 
 
-module.controller('searchCtrl', ['$scope','$resource','$window' ,'serviceId' , function ($scope, $resource, $window, serviceId) {
-    //var Team = $resource('http://localhost:3000/users/:userName/:rrr',
-    //  {userName : '@userName', rrr :'@w'},
-    // $scope.user ={};
-    // $scope.user.username ='';
+module.controller('searchCtrl', ['$scope','$resource','$window' , function ($scope, $resource, $window) {
+
+    $scope.category = "name";
+    $scope.keyword = "";
+
     var ShowAll = $resource('http://localhost:3000/people',
-        {people : 'people'},
-        {'get' : {method: 'GET', isArray :true}}
+        {people: 'people'},
+        {'get': {method: 'GET', isArray: true}}
     );
 
     var FindByName = $resource('http://localhost:3000/people/name/:name',
-        {name : '@userName'},
-        {'get' : {method: 'GET', isArray :true}}
+        {name: '@userName'},
+        {'get': {method: 'GET', isArray: true}}
     );
 
     var FindBySex = $resource('http://localhost:3000/people/sex/:sex',
-        {sex : '@sex'},
-        {'get' : {method: 'GET', isArray :true}}
+        {sex: '@sex'},
+        {'get': {method: 'GET', isArray: true}}
     );
 
     var FindByYear = $resource('http://localhost:3000/people/year/:year',
-        {year : '@year'},
-        {'get' : {method: 'GET', isArray :true}}
+        {year: '@year'},
+        {'get': {method: 'GET', isArray: true}}
     );
 
     var FindByReward = $resource('http://localhost:3000/reward',
-        {reward : '@reward'},
-        {'get' : {method: 'GET', isArray :true}}
+        {reward: '@reward'},
+        {'get': {method: 'GET', isArray: true}}
     );
 
     var showProfile = $resource('http://localhost:3000/people/:id',
-        {id : '@id'},
-        {'get' : {method: 'GET', isArray :false}}
+        {id: '@id'},
+        {'get': {method: 'GET', isArray: false}}
     );
 
 
     $scope.ShowAll = function () {
-                ShowAll.get().
-                $promise.then(function (information) {
-                    $scope.members =information;
+        ShowAll.get().$promise.then(function (information) {
+            $scope.members = information;
 
-                }, function (errResponse) {
-                    alert(errResponse);
-                    // alert('error')
-                });
+        }, function (errResponse) {
+            alert(errResponse);
+            // alert('error')
+        });
     }
-    
-    $scope.loadProfile= function (id) {
+
+    $scope.loadProfile = function (id) {
         // serviceId.set(id);
         alert(id);
-        $window.location.href = 'profile.html'+'#'+id;
+        $window.location.href = 'profile.html' + '#' + id;
 
     }
 
+
     $scope.searchSubmit = function () {
-        alert($scope.category );
-        alert($scope.keyword);
-        if($scope.category == "name"){
+        if ($scope.category == "name") {
 
-            if($scope.keyword !=null){
-                FindByName.get({name :$scope.keyword}).
-                $promise.then(function (information) {
-                    $scope.members =information;
+            if ($scope.keyword != null) {
+                FindByName.get({name: $scope.keyword}).$promise.then(function (information) {
+                    $scope.members = information;
 
                 }, function (errResponse) {
                     alert(errResponse);
@@ -180,12 +184,10 @@ module.controller('searchCtrl', ['$scope','$resource','$window' ,'serviceId' , f
                 });
 
             }
-
-        }else if ($scope.category == "year"){
-            if($scope.keyword !=null){
-                FindByYear.get({year :$scope.keyword}).
-                $promise.then(function (information) {
-                    $scope.members =information;
+        } else if ($scope.category == "year") {
+            if ($scope.keyword != null) {
+                FindByYear.get({year: $scope.keyword}).$promise.then(function (information) {
+                    $scope.members = information;
 
                 }, function (errResponse) {
                     alert(errResponse);
@@ -193,11 +195,10 @@ module.controller('searchCtrl', ['$scope','$resource','$window' ,'serviceId' , f
                 });
             }
 
-        }else if ($scope.category == "reward"){
-            if($scope.keyword !=null){
-                FindByReward.get({reward :$scope.keyword}).
-                $promise.then(function (information) {
-                    $scope.members =information;
+        } else if ($scope.category == "reward") {
+            if ($scope.keyword != null) {
+                FindByReward.get({reward: $scope.keyword}).$promise.then(function (information) {
+                    $scope.members = information;
                     alert("reward search sent")
 
                 }, function (errResponse) {
@@ -206,11 +207,10 @@ module.controller('searchCtrl', ['$scope','$resource','$window' ,'serviceId' , f
                 });
             }
 
-        }else if ($scope.category == "sex"){
-            if($scope.keyword !=null){
-                FindBySex.get({sex :$scope.keyword}).
-                $promise.then(function (information) {
-                    $scope.members =information;
+        } else if ($scope.category == "sex") {
+            if ($scope.keyword != null) {
+                FindBySex.get({sex: $scope.keyword}).$promise.then(function (information) {
+                    $scope.members = information;
 
                 }, function (errResponse) {
                     alert(errResponse);
@@ -219,22 +219,69 @@ module.controller('searchCtrl', ['$scope','$resource','$window' ,'serviceId' , f
             }
 
         }
-    }
+    };
+
+    $scope.$watch('category', function () {
+        $scope.keyword = "";
+    });
+
+    $scope.$watch('keyword', function () {
+        if ($scope.keyword != "" && $scope.keyword!= null) {
+            if ($scope.category == "name") {
+
+                if ($scope.keyword != null) {
+                    FindByName.get({name: $scope.keyword}).$promise.then(function (information) {
+                        $scope.members = information;
+
+                    }, function (errResponse) {
+                        alert(errResponse);
+                        // alert('error')
+                    });
+
+                }
+            } else if ($scope.category == "year") {
+                if ($scope.keyword != null) {
+                    FindByYear.get({year: $scope.keyword}).$promise.then(function (information) {
+                        $scope.members = information;
+
+                    }, function (errResponse) {
+                        alert(errResponse);
+                        // alert('error')
+                    });
+                }
+
+            } else if ($scope.category == "reward") {
+                if ($scope.keyword != null) {
+                    FindByReward.get({reward: $scope.keyword}).$promise.then(function (information) {
+                        $scope.members = information;
+                        alert("reward search sent")
+
+                    }, function (errResponse) {
+                        alert(errResponse);
+                        // alert('error')
+                    });
+                }
+
+            } else if ($scope.category == "sex") {
+                if ($scope.keyword != null) {
+                    FindBySex.get({sex: $scope.keyword}).$promise.then(function (information) {
+                        $scope.members = information;
+
+                    }, function (errResponse) {
+                        alert(errResponse);
+                        // alert('error')
+                    });
+                }
+
+            }
+        } else {
+            $scope.ShowAll();
+        }
+    });
 }]);
 
-module.factory('serviceId', function() {
-    var id = "";
-    function set(data) {
-        id = data;
-    }
-    function get() {
-        return id;
-    }
-
-    return {
-        set: set,
-        get: get
-    }
-
+module.filter('reverse', function() {
+    return function(items) {
+        return items.slice().reverse();
+    };
 });
-

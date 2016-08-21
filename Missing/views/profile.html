@@ -39,124 +39,117 @@
     </nav>
 </header>
 <hr>
-<body ng-app="missingApp" ng-controller="profileCtrl">
+<body ng-app="missingApp" >
 
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+<div ng-controller="profileCtrl">
+
+    <div class="container" >
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
 
 
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{{person.name}}</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-3 col-lg-3 " align="center"><img alt="User Pic"
-                                                                            src="{{person.photo}}"
-                                                                            class="img-circle img-responsive"></div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{person.name}}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 " align="center"><img alt="User Pic"
+                                                                                src="{{person.photo}}"
+                                                                                class="img-circle img-responsive"></div>
 
-                        <div class=" col-md-9 col-lg-9 ">
-                            <table class="table table-user-information">
-                                <tbody>
-                                <tr>
-                                    <td>Reward:</td>
-                                    <td>{{person.reward}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Date of Birth:</td>
-                                    <td>{{person.dob}}</td>
-                                </tr>
+                            <div class=" col-md-9 col-lg-9 ">
+                                <table class="table table-user-information">
+                                    <tbody>
+                                    <tr>
+                                        <td>Reward:</td>
+                                        <td>{{person.reward}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date of Birth:</td>
+                                        <td>{{person.dob}}</td>
+                                    </tr>
 
-                                <tr>
-                                <tr>
-                                    <td>Place of Birth:</td>
-                                    <td>{{person.pob}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Sex:</td>
-                                    <td>{{person.sex}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Hair/Eyes:</td>
-                                    <td>{{person.hair}}/{{person.eyes}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Height/Weight:</td>
-                                    <td>{{person.height}} kg/{{person.weight}} cm</td>
-                                </tr>
-                                <tr>
-                                    <td>Race:</td>
-                                    <td>{{person.race}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Scars and Marks:</td>
-                                    <td>{{person.sam}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Remarks:</td>
-                                    <td>{{person.remarks}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Details:</td>
-                                    <td>{{person.details}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Contact:</td>
-                                    <td>{{person.contact}}</td>
-                                </tr>
-                                </tbody>
-                            </table>
+                                    <tr>
+                                    <tr>
+                                        <td>Place of Birth:</td>
+                                        <td>{{person.pob}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sex:</td>
+                                        <td>{{person.sex}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hair/Eyes:</td>
+                                        <td>{{person.hair}}/{{person.eyes}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Height/Weight:</td>
+                                        <td>{{person.height}} kg/{{person.weight}} cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Race:</td>
+                                        <td>{{person.race}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Scars and Marks:</td>
+                                        <td>{{person.sam}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Remarks:</td>
+                                        <td>{{person.remarks}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Details:</td>
+                                        <td>{{person.details}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Contact:</td>
+                                        <td>{{person.contact}}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="panel-footer">
-                    <a href="#information" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-eye-open"></i>   See Information</a>
-                    <span class="pull-right">
-                            <a href="#comment" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i>   Give Information</a>
-                        </span>
+                    <div class="panel-footer">
+                        <a href="#information" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-eye-open"></i>   See Information</a>
+                        <span class="pull-right">
+                                <a href="#comment" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i>   Give Information</a>
+                            </span>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="information">
+        <div class="row">
+            <div class="col-sm-6 col-centered ">
+                <h3>Information</h3>
+            </div><!-- /col-sm-12 -->
+        </div><!-- /row -->
+
+        <div class="row" ng-repeat="comment in person.comments | reverse">
+
+            <div class="col-sm-6 col-centered">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <strong>{{comment.email}}</strong> <span
+                            class="text-muted">commented {{comment.date}} days ago</span>
+                    </div>
+                    <div class="panel-body">
+                        {{comment.comment}}
+                    </div><!-- /panel-body -->
+                </div><!-- /panel panel-default -->
+            </div><!-- /col-sm-5 -->
         </div>
     </div>
 </div>
 
 
-<div class="container" id="information">
-    <div class="row">
-        <div class="col-sm-6 ">
-            <h3>Information</h3>
-        </div><!-- /col-sm-12 -->
-    </div><!-- /row -->
-    <div class="row">
-
-        <div class="col-sm-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <strong>{{comment.email}}</strong> <span
-                        class="text-muted">commented {{comment.countday}} days ago</span>
-                </div>
-                <div class="panel-body">
-                    {{comment.comment}}
-                </div><!-- /panel-body -->
-            </div><!-- /panel panel-default -->
-        </div><!-- /col-sm-5 -->
-
-        <div class="col-sm-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
-                </div>
-                <div class="panel-body">
-                    Panel content
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container" id="comment">
+<div class="container" id="comment" ng-controller="CommentCtrl">
     <div class="row">
         <div class="col-sm-6 col-centered">
             <div class="panel panel-default">
@@ -171,9 +164,11 @@
                                           placeholder="Tell Us if you have any information about this people!"></textarea>
                                 <input type="email" class="form-control" id="inputEmail"
                                        placeholder="Enter your email"
-                                       ng-model="email">
-                                <button type="submit" ng-click="submitComment()" class="btn btn-success green"> <i class="glyphicon glyphicon-edit"></i> Comment
-                                </button>
+                                       ng-model="email" required>
+                                <!--<button type="submit" ng-click="submitComment()" class="btn btn-success green"> <i class="glyphicon glyphicon-edit"></i> Comment-->
+                                <!--</button>-->
+
+                                <input type="button" value="Comment" ng-click="submitComment()" class="btn btn-success green" >
                             </form>
                         </div><!-- Status Upload  -->
                     </div><!-- Widget Area -->
