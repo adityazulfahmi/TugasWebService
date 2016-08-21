@@ -39,11 +39,11 @@
     </nav>
 </header>
 <hr>
-<body ng-app="missingApp" >
+<body ng-app="missingApp">
 
 <div ng-controller="profileCtrl">
 
-    <div class="container" >
+    <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
 
@@ -112,12 +112,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel-footer">
-                        <a href="#information" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-eye-open"></i>   See Information</a>
-                        <span class="pull-right">
-                                <a href="#comment" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i>   Give Information</a>
-                            </span>
-                    </div>
+                    <!--<div class="panel-footer">-->
+                        <!--<a href="#information" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i-->
+                                <!--class="glyphicon glyphicon-eye-open"></i> See Information</a>-->
+                        <!--<span class="pull-right">-->
+                            <!--<a href="#comment" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i-->
+                                    <!--class="glyphicon glyphicon-edit"></i>   Give Information</a>-->
+                        <!--</span>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
@@ -131,9 +133,8 @@
             </div><!-- /col-sm-12 -->
         </div><!-- /row -->
 
-        <div class="row" ng-repeat="comment in person.comments | reverse">
-
-            <div class="col-sm-6 col-centered">
+        <div class="row">
+            <div class="col-sm-6 col-centered" ng-repeat="comment in person.comments | reverse">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <strong>{{comment.email}}</strong> <span
@@ -160,15 +161,22 @@
                     <div class="widget-area no-padding blank">
                         <div class="status-upload">
                             <form role="form" id="inputForm">
-                                <textarea id="inputComment" placeholder="Enter comments" ng-model="comment"
-                                          placeholder="Tell Us if you have any information about this people!"></textarea>
-                                <input type="email" class="form-control" id="inputEmail"
-                                       placeholder="Enter your email"
-                                       ng-model="email" required>
+                                <div class="form-group">
+                                    <label class="control-label" for="inputComment">Comment : </label>
+                                    <textarea id="inputComment" placeholder="Enter comments" ng-model="comment"
+                                              placeholder="Tell Us if you have any information about this people!"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="inputEmail">Email : </label>
+                                    <input type="email" class="form-control" id="inputEmail"
+                                           placeholder="Enter your email"
+                                           ng-model="email" required>
+                                </div>
                                 <!--<button type="submit" ng-click="submitComment()" class="btn btn-success green"> <i class="glyphicon glyphicon-edit"></i> Comment-->
                                 <!--</button>-->
 
-                                <input type="button" value="Comment" ng-click="submitComment()" class="btn btn-success green" >
+                                <input type="button" value="Comment" ng-click="submitComment()"
+                                       class="btn btn-success green">
                             </form>
                         </div><!-- Status Upload  -->
                     </div><!-- Widget Area -->
