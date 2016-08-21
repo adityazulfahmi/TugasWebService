@@ -65,9 +65,9 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
   var uploadDate = new Date().toDateString();
   var tempPath = photo.path;
   console.log("temp Path: "+tempPath);
-  var targetPath = path.join("localhost:3000/Image/" +uploadDate +" "+ photo.name);
-  // console.log($window.pathname());
 
+  var dbPath ="http://localhost:3000/Image/"+uploadDate +" "+ photo.name;
+  var targetPath = path.join(__dirname, "../public/image/" +uploadDate +" "+ photo.name);
   // contact.log("targetPath"+ targetPath);
   console.log("user is submitting "+ photo);
   var imageUpload = targetPath;
@@ -93,7 +93,7 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
   );
 
   var person = new Missing({
-    photo : imageUpload,
+    photo : dbPath,
     name  : name,
     dob   : dob,
     pob   : pob,
@@ -110,7 +110,7 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
     contact:contact,
     year  :year
   });
-  console.log("sampai?");
+  // console.log("sampai?");
 
   fs.rename(tempPath, targetPath, function (err) {
     if(err){
@@ -120,7 +120,7 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
       console.log(targetPath);
     }
   })
-  console.log("sampai ga?");
+  // console.log("sampai ga?");
 
   person.save(function (err, silence) {
     if(err){

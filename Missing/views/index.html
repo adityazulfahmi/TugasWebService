@@ -11,6 +11,7 @@
     <script src="/Missing/public/stylesheets/bootstrap-3.3.7-dist/js/jquery.min.js"></script>
     <script src="/Missing/public/stylesheets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-resource.js"></script>
@@ -19,8 +20,9 @@
     <script src="../node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
     <script src="../node_modules/ng-file-upload/dist/ng-file-upload-all.js"></script>
     <script src="../node_modules/ng-file-upload/dist/ng-file-upload-shim.js"></script>
-
+    <script src="../node_modules/ng-file-upload/dist/ng-file-upload-shim.js"></script>
 </head>
+<div ng-init="getPerson()" >
 
 <header>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -41,7 +43,9 @@
                 <form class="navbar-form navbar-left" role="search"  ng-submit="searchSubmit()">
                     <tr>
                         <td>
+
                             <input type="text" class="form-control" placeholder="Search" ng-model="keyword">
+
                         </td>
 
                         <td>
@@ -129,7 +133,9 @@
             <img class="img-circle" src="{{member.photo}}" alt="Generic placeholder image" width="140" height="140">
             <h2>{{member.name}}</h2>
             <p>Reward : ${{member.reward}}</p>
-            <p><a class="btn btn-default" role="button">View details »</a></p>
+
+            <p><a class="btn btn-default" href="profile.html/{{member.name}}" role="button">View details »</a></p>
+
         </div>
 
     </div>
@@ -158,4 +164,6 @@
 </ul>
 </div>
 </body>
+
+</div>
 </html>

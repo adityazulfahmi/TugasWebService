@@ -2,7 +2,9 @@
  * Created by ajou on 8/19/2016.
  */
 var module = angular.module('missingApp', ['ngFileUpload', 'ngResource']);
+
 module.controller('addCtrl', ['$scope', '$http' ,'$window' ,'Upload',  function ($scope, $http, $window, Upload) {
+
     // $scope.user ={};
     // $scope.user.username ='';
     $scope.user ={};
@@ -348,3 +350,4 @@ module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resour
 //
 //     }
 // }
+
