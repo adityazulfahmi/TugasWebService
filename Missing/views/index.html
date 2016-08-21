@@ -46,16 +46,13 @@
                                     <span class="glyphicon glyphicon-plus"></span> Add
                                 </a>
                             </form>
-                            <form class="navbar-form navbar-left" role="search" ng-submit="searchSubmit()">
+                            <form class="navbar-form navbar-left" role="search" ng-submit="searchSubmit()" name="searchForm" id="searchForm">
+                                <input type="text" class="form-control" name="keyword" id="keyword" placeholder="Search" ng-model="keyword" required>
                                 <tr>
                                     <td>
-
-                                        <input type="text" class="form-control" placeholder="Search" ng-model="keyword">
-
                                     </td>
-
                                     <td>
-                                        <select class="form-control" id="sel1" ng-model="category">
+                                        <select class="form-control" id="sel1" name="category" ng-model="category">
                                             <option value="name" selected>Name</option>
                                             <option value="year">Year</option>
                                             <option value="reward">Reward</option>

@@ -85,10 +85,11 @@ module.controller('CommentCtrl', ['$scope', '$http' , function ($scope, $http) {
 
 
 module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resource) {
-    //var Team = $resource('http://localhost:3000/users/:userName/:rrr',
-    //  {userName : '@userName', rrr :'@w'},
-    // $scope.user ={};
-    // $scope.user.username ='';
+
+    $scope.category="name";
+    $scope.keyword="";
+
+
     var ShowAll = $resource('http://localhost:3000/people',
         {people : 'people'},
         {'get' : {method: 'GET', isArray :true}}
@@ -119,24 +120,6 @@ module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resour
         {'get' : {method: 'GET', isArray :false}}
     );
 
-    // $scope.loadProfile = function ($id) {
-    //     alert($scope.category);
-    //     alert($scope.keyword);
-    //     if ($scope.category == "name") {
-    //
-    //         if ($scope.keyword != null) {
-    //             FindByName.get({name: $scope.keyword}).$promise.then(function (information) {
-    //                 $scope.members = information;
-    //
-    //             }, function (errResponse) {
-    //                 alert(errResponse);
-    //                 // alert('error')
-    //             });
-    //
-    //         }
-    //     }
-    // }
-
     $scope.ShowAll = function () {
                 ShowAll.get().
                 $promise.then(function (information) {
@@ -148,9 +131,9 @@ module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resour
                 });
     }
 
+
+
     $scope.searchSubmit = function () {
-        alert($scope.category );
-        alert($scope.keyword);
         if($scope.category == "name"){
 
             if($scope.keyword !=null){
@@ -164,7 +147,6 @@ module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resour
                 });
 
             }
-
         }else if ($scope.category == "year"){
             if($scope.keyword !=null){
                 FindByYear.get({year :$scope.keyword}).
@@ -203,7 +185,69 @@ module.controller('searchCtrl', ['$scope','$resource', function ($scope, $resour
             }
 
         }
-    }
+    };
+
+    $scope.$watch('category', function () {
+        $scope.keyword = "";
+    });
+
+    $scope.$watch('keyword', function () {
+        if($scope.keyword!=""){
+            if($scope.category == "name"){
+
+                if($scope.keyword !=null){
+                    FindByName.get({name :$scope.keyword}).
+                    $promise.then(function (information) {
+                        $scope.members =information;
+
+                    }, function (errResponse) {
+                        alert(errResponse);
+                        // alert('error')
+                    });
+
+                }
+            }else if ($scope.category == "year"){
+                if($scope.keyword !=null){
+                    FindByYear.get({year :$scope.keyword}).
+                    $promise.then(function (information) {
+                        $scope.members =information;
+
+                    }, function (errResponse) {
+                        alert(errResponse);
+                        // alert('error')
+                    });
+                }
+
+            }else if ($scope.category == "reward"){
+                if($scope.keyword !=null){
+                    FindByReward.get({reward :$scope.keyword}).
+                    $promise.then(function (information) {
+                        $scope.members =information;
+                        alert("reward search sent")
+
+                    }, function (errResponse) {
+                        alert(errResponse);
+                        // alert('error')
+                    });
+                }
+
+            }else if ($scope.category == "sex"){
+                if($scope.keyword !=null){
+                    FindBySex.get({sex :$scope.keyword}).
+                    $promise.then(function (information) {
+                        $scope.members =information;
+
+                    }, function (errResponse) {
+                        alert(errResponse);
+                        // alert('error')
+                    });
+                }
+
+            }
+        }else{
+            $scope.ShowAll();
+        }
+    });
 
     // $scope.getPersonbyName = function () {
     //
