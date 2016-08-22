@@ -119,7 +119,6 @@ module.controller('profileCtrl', ['$scope', '$http','$window' ,'$resource' , fun
 
 
 module.controller('searchCtrl', ['$scope','$resource','$window' , function ($scope, $resource, $window) {
-
     $scope.category = "name";
     $scope.keyword = "";
     $scope.formType = "text";

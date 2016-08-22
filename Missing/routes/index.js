@@ -1,7 +1,5 @@
 var express = require('express');
 var router = express.Router();
-// var fs = require('fs');
-
 var multiPart = require('connect-multiparty');
 var multiPartMiddleware = multiPart();
 var path = require('path');
@@ -72,25 +70,6 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
 
   var result = dbPath.replace("\\", "/");
 
-  // console.log(
-  //     "photo :"+photo+"\n"+
-  //     "name  :"+name+"\n"+
-  //     "dob   :"+dob+"\n"+
-  //     "pob   :"+pob+"\n"+
-  //     "hair  :"+hair+"\n"+
-  //     "eyes  :"+eyes+"\n"+
-  //     "height:"+height+"\n"+
-  //     "weight:"+weight+"\n"+
-  //     "sex   :"+sex+"\n"+
-  //     "race  :"+race+"\n"+
-  //     "sam   :"+sam+"\n"+
-  //     "reward:"+reward+"\n"+
-  //     "remarks:"+remarks+"\n"+
-  //     "details:"+details+"\n"+
-  //     "contact:"+contact+"\n"+
-  //     "year  :"+year
-  // );
-
   var person = new Missing({
     photo : result,
     name  : name,
@@ -118,7 +97,6 @@ router.post('/add', multiPartMiddleware, function(req, res, next) {
       console.log(targetPath);
     }
   })
-
 
   person.save(function (err, silence) {
     if(err){
